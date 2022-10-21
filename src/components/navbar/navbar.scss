@@ -1,0 +1,18 @@
+.navbar {
+    background-color: $blueBackground;
+    margin-top: 5%;
+
+    a,
+    p {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.464vw;
+    }
+
+    // .options {
+    //     padding-top: 0%;
+    //     border-bottom: 1px solid white;
+    //     padding-bottom: 0.5%;
+    // }
+}
