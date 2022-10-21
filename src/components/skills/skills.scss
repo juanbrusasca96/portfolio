@@ -1,0 +1,15 @@
+.skills {
+    .icon {
+        color: white;
+        padding-top: 60%;
+
+        svg {
+            width: 7.321vw;
+            height: 7.321vw;
+        }
+
+        &:hover {
+            color: $redButton;
+        }
+    }
+}
