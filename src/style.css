@@ -1,0 +1,290 @@
+.navbar {
+  background-color: #07182E;
+  margin-top: 5%; }
+  .navbar a,
+  .navbar p {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.464vw; }
+
+.aboutMe {
+  padding-top: 5%;
+  /* From uiverse.io by @mrhyddenn */ }
+  .aboutMe p {
+    font-family: 'Fira Code', monospace; }
+  .aboutMe .name {
+    font-size: 1.830vw;
+    font-weight: 500;
+    margin: 1%;
+    margin-top: 3%; }
+  .aboutMe .text {
+    font-size: 1.430vw;
+    margin: 1% 5% 0 5%;
+    text-align: center; }
+  .aboutMe span {
+    color: #ff013c;
+    font-weight: 800; }
+  .aboutMe .download {
+    margin: 2%; }
+    .aboutMe .download button,
+    .aboutMe .download button::after {
+      padding: 10px 20px;
+      font-size: 18px;
+      background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+      border: 0;
+      color: #fff;
+      letter-spacing: 3px;
+      line-height: 1;
+      box-shadow: 6px 0px 0px #07182E;
+      outline: transparent;
+      position: relative;
+      cursor: pointer;
+      font-family: 'Fira Code', monospace; }
+    .aboutMe .download button::after {
+      --slice-0: inset(50% 50% 50% 50%);
+      --slice-1: inset(80% -6px 0 0);
+      --slice-2: inset(50% -6px 30% 0);
+      --slice-3: inset(10% -6px 85% 0);
+      --slice-4: inset(40% -6px 43% 0);
+      --slice-5: inset(80% -6px 5% 0);
+      content: "HOVER ME";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, transparent 3%, #07182E 3%, #07182E 5%, #ff013c 5%);
+      text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #07182E;
+      clip-path: var(--slice-0);
+      animation: 2s glitch infinite;
+      animation-timing-function: steps(2, end); }
+    .aboutMe .download button:hover::after {
+      animation: 1s glitch;
+      animation-timing-function: steps(2, end); }
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px); }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px); }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px); }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px); }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px); }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px); }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px); }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px); }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px); }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px); }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0); } }
+  .aboutMe .scanner h1 {
+    color: transparent;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden; }
+  .aboutMe .scanner h1::before {
+    content: attr(contentCss);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 4px solid white;
+    overflow: hidden;
+    color: white;
+    animation: load91371 3s linear infinite; }
+
+@keyframes load91371 {
+  0%,
+  10%,
+  100% {
+    width: 0; }
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    border-right-color: transparent; }
+  11%,
+  21%,
+  31%,
+  41%,
+  51%,
+  61%,
+  71%,
+  81%,
+  91% {
+    border-right-color: white; }
+  60%,
+  80% {
+    width: 100%; } }
+  .aboutMe .card {
+    width: 200px;
+    height: 250px;
+    background: #07182E;
+    border-radius: 5px;
+    text-align: center;
+    color: #f0f0f0;
+    font-family: 'Fira Code', monospace;
+    z-index: 1;
+    padding-top: 1%; }
+    .aboutMe .card .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 75px;
+      height: 75px;
+      border: 1px solid #f0f0f0;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+      z-index: 99;
+      background-color: #152f50; }
+    .aboutMe .card p {
+      opacity: 0;
+      transition: all 0.5s; }
+    .aboutMe .card h1 {
+      padding: 5px;
+      font-weight: 500;
+      font-size: 18px;
+      margin: 0; }
+    .aboutMe .card h5 {
+      padding: 0;
+      margin: 0;
+      color: gray; }
+    .aboutMe .card svg {
+      padding: 0 5px;
+      cursor: pointer; }
+  .aboutMe .card:hover .img {
+    transform: scale(1.1);
+    border: 1px solid #f0f0f0; }
+  .aboutMe .card:hover h1,
+  .aboutMe .card:hover p {
+    opacity: 1; }
+  .aboutMe .container {
+    font-size: 1.430vw;
+    margin: 1% 5% 0 5%; }
+    .aboutMe .container .terminal_toolbar {
+      display: flex;
+      height: 30px;
+      align-items: center;
+      padding: 0 8px;
+      box-sizing: border-box;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background: linear-gradient(#504b45 0%, #3c3b37 100%); }
+    .aboutMe .container .butt {
+      display: flex;
+      align-items: center; }
+    .aboutMe .container .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin-right: 5px;
+      height: 12px;
+      width: 12px;
+      box-sizing: border-box;
+      border: none;
+      border-radius: 100%;
+      background: linear-gradient(#7d7871 0%, #595953 100%);
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642; }
+    .aboutMe .container .btn-color {
+      background: #ee411a; }
+    .aboutMe .container .btn:hover {
+      cursor: pointer; }
+    .aboutMe .container .btn:focus {
+      outline: none; }
+    .aboutMe .container .butt--exit {
+      background: linear-gradient(#f37458 0%, #de4c12 100%); }
+    .aboutMe .container .user {
+      color: #d5d0ce;
+      margin-left: 6px;
+      font-size: 14px;
+      line-height: 15px; }
+    .aboutMe .container .terminal_body {
+      background: #07182E;
+      height: calc(100% - 30px);
+      padding-top: 2px;
+      margin-top: -1px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
+    .aboutMe .container .terminal_promt {
+      display: flex; }
+    .aboutMe .container .terminal_promt span {
+      margin-left: 4px; }
+    .aboutMe .container .terminal_user {
+      color: #7eda28; }
+    .aboutMe .container .terminal_location {
+      color: #4878c0; }
+    .aboutMe .container .terminal_bling {
+      color: #dddddd;
+      padding-right: 1%; }
+    .aboutMe .container .terminal_cursor {
+      display: block;
+      height: 1.430vw;
+      width: 10px;
+      margin-left: 10px;
+      animation: curbl 1200ms linear infinite;
+      margin-bottom: 1%; }
+
+@keyframes curbl {
+  0% {
+    background: #ffffff; }
+  49% {
+    background: #ffffff; }
+  60% {
+    background: transparent; }
+  99% {
+    background: transparent; }
+  100% {
+    background: #ffffff; } }
+
+.skills .icon {
+  color: white;
+  padding-top: 60%; }
+  .skills .icon svg {
+    width: 7.321vw;
+    height: 7.321vw; }
+  .skills .icon:hover {
+    color: #ff013c; }
+
+.App {
+  min-height: 200vh;
+  overflow-x: hidden;
+  background: url(/src/images/background.png) center top/cover no-repeat;
+  font-family: 'Fira Code', monospace; }
+
+html {
+  font-family: 'Fira Code', monospace;
+  color: white; }
+  html a, html p {
+    font-family: 'Fira Code', monospace; }

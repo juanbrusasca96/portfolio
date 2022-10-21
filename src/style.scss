@@ -1,0 +1,19 @@
+@import 'colors.scss';
+@import './components/navbar/navbar.scss';
+@import './components/aboutMe/aboutMe.scss';
+@import './components/skills/skills.scss';
+
+.App{
+    min-height: 200vh;
+    overflow-x: hidden;
+    background: url(/src/images/background.png)  center top/cover no-repeat ;
+    font-family: 'Fira Code', monospace;
+}
+
+html{
+    font-family: 'Fira Code', monospace;
+    color: white;
+    a, p{
+        font-family: 'Fira Code', monospace;
+    }
+}
