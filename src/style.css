@@ -277,8 +277,94 @@
   .skills .icon:hover {
     color: #ff013c; }
 
+.projects .cardProject .card {
+  width: 12rem;
+  cursor: pointer;
+  width: 250px;
+  height: 250px; }
+  .projects .cardProject .card .content {
+    text-align: center;
+    border-radius: 1.098vw;
+    position: relative;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; }
+  .projects .cardProject .card:hover .content {
+    transform: rotateY(0.5turn); }
+  .projects .cardProject .card .front svg {
+    font-size: 4.392vw;
+    transform: translateZ(5rem);
+    padding: 2%; }
+  .projects .cardProject .card .front,
+  .projects .cardProject .card .back {
+    position: absolute;
+    border-radius: 1.098vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 3%;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    font-size: 1.830vw; }
+  .projects .cardProject .card .title {
+    transform: translateZ(5rem); }
+  .projects .cardProject .card .subtitle {
+    transform: translateZ(3rem);
+    font-weight: bold;
+    margin: 0;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 5%; }
+  .projects .cardProject .card .back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: rotateY(0.5turn);
+    background-color: #ff013c; }
+    .projects .cardProject .card .back svg {
+      font-size: 2.196vw;
+      transform: translateZ(5rem); }
+  .projects .cardProject .card .description {
+    transform: translateZ(2rem);
+    margin: 2%; }
+
+.projects .cardProject button {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+  margin-top: 4%;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 4px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  background: #ff013c; }
+
+.projects .cardProject button .button-content {
+  display: flex;
+  align-items: center;
+  padding: 8px 14px;
+  padding-left: 10px;
+  border-radius: 16px; }
+
+.projects .cardProject button svg {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  color: white;
+  transition: transform 0.3s; }
+
+.projects .cardProject button:hover svg {
+  transform: scale(1.2); }
+
 .App {
-  min-height: 200vh;
+  min-height: 300vh;
   overflow-x: hidden;
   background: url(/src/images/background.png) center top/cover no-repeat;
   font-family: 'Fira Code', monospace; }
@@ -286,5 +372,6 @@
 html {
   font-family: 'Fira Code', monospace;
   color: white; }
-  html a, html p {
+  html a,
+  html p {
     font-family: 'Fira Code', monospace; }

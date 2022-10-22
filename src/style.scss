@@ -2,18 +2,21 @@
 @import './components/navbar/navbar.scss';
 @import './components/aboutMe/aboutMe.scss';
 @import './components/skills/skills.scss';
+@import './components/projects/projects.scss';
 
-.App{
-    min-height: 200vh;
+.App {
+    min-height: 300vh;
     overflow-x: hidden;
-    background: url(/src/images/background.png)  center top/cover no-repeat ;
+    background: url(/src/images/background.png) center top/cover no-repeat;
     font-family: 'Fira Code', monospace;
 }
 
-html{
+html {
     font-family: 'Fira Code', monospace;
     color: white;
-    a, p{
+
+    a,
+    p {
         font-family: 'Fira Code', monospace;
     }
 }
