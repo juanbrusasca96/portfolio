@@ -295,7 +295,7 @@
   .projects .cardProject .card .front svg {
     font-size: 4.392vw;
     transform: translateZ(5rem);
-    padding: 2%; }
+    padding: 4%; }
   .projects .cardProject .card .front,
   .projects .cardProject .card .back {
     position: absolute;
@@ -323,7 +323,8 @@
     flex-direction: column;
     justify-content: space-between;
     transform: rotateY(0.5turn);
-    background-color: #ff013c; }
+    background-color: #ff013c;
+    padding: 1%; }
     .projects .cardProject .card .back svg {
       font-size: 2.196vw;
       transform: translateZ(5rem); }

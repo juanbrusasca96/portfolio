@@ -28,7 +28,7 @@
                 svg {
                     font-size: 4.392vw;
                     transform: translateZ(5rem);
-                    padding: 2%;
+                    padding: 4%;
                 }
             }
 
@@ -69,6 +69,7 @@
                 justify-content: space-between;
                 transform: rotateY(0.5turn);
                 background-color: $redButton;
+                padding: 1%;
 
                 svg {
                     font-size: 2.196vw;
