@@ -14,7 +14,6 @@ export default function AboutMe() {
         return () => clearInterval(intervalID);
     }, [index])
 
-    console.log(index);
     return (
         <Grid container direction="column" alignItems="center" className='aboutMe'>
             <div className="loader">
