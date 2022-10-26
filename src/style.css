@@ -391,6 +391,26 @@
   .contact .input:hover {
     color: white; }
 
+.footer {
+  background-color: #333333;
+  padding: 4%;
+  padding-bottom: 1%;
+  gap: 30px; }
+  .footer .social {
+    gap: 50px; }
+    .footer .social svg {
+      font-size: 50px;
+      transition: all .2s ease-in; }
+      .footer .social svg:hover {
+        transform: translateY(-5px); }
+  .footer .backToTop svg {
+    font-size: 35px; }
+  .footer hr {
+    width: 70%;
+    border: 1px solid #484848; }
+  .footer p {
+    color: #616161; }
+
 .App {
   min-height: 300vh;
   overflow-x: hidden;
