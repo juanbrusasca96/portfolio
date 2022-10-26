@@ -4,7 +4,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 export default function Skills() {
     return (
-        <Grid container direction="column" className='skills' xs={12} p={`5%`}>
+        <Grid container direction="column" className='skills section' xs={12} p={`5%`} id='skills'>
             <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
                 <h1>Lenguajes y herramientas</h1>
             </AnimationOnScroll>

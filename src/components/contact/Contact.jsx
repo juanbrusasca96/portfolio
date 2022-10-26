@@ -116,7 +116,7 @@ export default function Contact() {
   console.log(errors.name);
 
   return (
-    <Grid container direction="column" alignItems="center" xs={12} className='contact'>
+    <Grid container direction="column" alignItems="center" xs={12} className='contact section' id='contact'>
       <Grid item container className='contactTitle'>
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
           <h1>Contacto</h1>

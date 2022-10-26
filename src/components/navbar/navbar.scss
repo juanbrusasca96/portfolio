@@ -1,18 +1,44 @@
-.navbar {
-    background-color: $blueBackground;
-    margin-top: 5%;
+.navbarAnimation {
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
 
-    a,
-    p {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.464vw;
+    .navbar {
+        background-color: $blueBackground;
+        margin-top: 0.5%;
+
+        a,
+        p {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.464vw;
+        }
+
+        .active {
+            color: $redButton;
+        }
+
+
+        .progressMainWrapper {
+            background-color: $redButtonSecondary;
+            height: 7px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .progressMainStyle {
+            height: 7px;
+            background-color: $redButton;
+        }
+
+        // .options {
+        //     padding-top: 0%;
+        //     border-bottom: 1px solid white;
+        //     padding-bottom: 0.5%;
+        // }
     }
-
-    // .options {
-    //     padding-top: 0%;
-    //     border-bottom: 1px solid white;
-    //     padding-bottom: 0.5%;
-    // }
 }

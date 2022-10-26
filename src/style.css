@@ -1,12 +1,29 @@
-.navbar {
-  background-color: #07182E;
-  margin-top: 5%; }
-  .navbar a,
-  .navbar p {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.464vw; }
+.navbarAnimation {
+  overflow: hidden;
+  width: 100%;
+  z-index: 100; }
+  .navbarAnimation .navbar {
+    background-color: #07182E;
+    margin-top: 0.5%; }
+    .navbarAnimation .navbar a,
+    .navbarAnimation .navbar p {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.464vw; }
+    .navbarAnimation .navbar .active {
+      color: #ff013c; }
+    .navbarAnimation .navbar .progressMainWrapper {
+      background-color: #b8566d;
+      height: 7px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%; }
+    .navbarAnimation .navbar .progressMainStyle {
+      height: 7px;
+      background-color: #ff013c; }
 
 .aboutMe {
   padding-top: 5%;

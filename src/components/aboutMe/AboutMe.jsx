@@ -15,7 +15,7 @@ export default function AboutMe() {
     }, [index])
 
     return (
-        <Grid container direction="column" alignItems="center" className='aboutMe'>
+        <Grid container direction="column" alignItems="center" className='aboutMe section' id='aboutMe'>
             <div className="loader">
                 <div className="scanner">
                     <h1 key={index} contentCss={content[index]}>{content[index]}</h1>
