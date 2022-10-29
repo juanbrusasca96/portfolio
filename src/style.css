@@ -294,6 +294,10 @@
   .skills .icon:hover {
     color: #ff013c; }
 
+.projects a {
+  text-decoration: none;
+  color: white; }
+
 .projects .cardProject .card {
   width: 12rem;
   cursor: pointer;
@@ -436,7 +440,8 @@
 
 html {
   font-family: 'Fira Code', monospace;
-  color: white; }
+  color: white;
+  scroll-behavior: smooth; }
   html a,
   html p {
     font-family: 'Fira Code', monospace; }
