@@ -1,12 +1,15 @@
 import { Grid, SvgIcon, Tooltip } from '@mui/material'
-import React from 'react'
+import React, { useContext } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
+import { LanguageContext } from '../../helpers/LanguageContext'
 
 export default function Skills() {
+    const [spanish] = useContext(LanguageContext)
+
     return (
         <Grid container direction="column" className='skills section' xs={12} p={`5%`} id='skills'>
             <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
-                <h1>Lenguajes y herramientas</h1>
+                <h1>{spanish ? 'Lenguajes y herramientas' : 'Skills'}</h1>
             </AnimationOnScroll>
             <Grid item container style={{ gap: "8%" }} justifyContent="center">
                 <Grid item>

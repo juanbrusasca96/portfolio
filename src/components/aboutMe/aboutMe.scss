@@ -1,5 +1,5 @@
 .aboutMe {
-    padding-top: 5%;
+    padding-top: 2%;
 
     p {
         font-family: 'Fira Code', monospace;
@@ -18,13 +18,54 @@
         text-align: center;
     }
 
-    span {
+    .myName {
         color: $redButton;
         font-weight: 800;
     }
 
+    .scroll {
+        .container_mouse{
+            padding-top: 15%;
+        }
+        .mouse-btn {
+            margin: 10% auto;
+            width: 20px;
+            height: 40px;
+            border: 3px solid rgba(122, 122, 124, 0.918);
+            border-radius: 20px;
+            display: flex;
+        }
+
+        .mouse-scroll {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
+            border-radius: 50%;
+            margin: auto;
+            animation: scrolling13 1s linear infinite;
+        }
+
+        @keyframes scrolling13 {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(10px);
+            }
+        }
+    }
+
     .download {
-        margin: 2%;
+        margin: 1%;
+        width: 30%;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
 
         button,
         button::after {
@@ -32,7 +73,6 @@
             font-size: 18px;
             background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
             border: 0;
-            color: #fff;
             letter-spacing: 3px;
             line-height: 1;
             box-shadow: 6px 0px 0px $blueBackground;
@@ -375,5 +415,151 @@
         }
     }
 
+    .switch {
+        padding: 0% 5% 0 5%;
+
+        /* Switch starts here */
+        .rocker {
+            display: inline-block;
+            position: relative;
+            /*
+    SIZE OF SWITCH
+    ==============
+    All sizes are in em - therefore
+    changing the font-size here
+    will change the size of the switch.
+    See .rocker-small below as example.
+    */
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            color: #888;
+            width: 7em;
+            height: 3.5em;
+            overflow: hidden;
+            border-bottom: 0.5em solid #eee;
+        }
+
+        .rocker-small {
+            font-size: 0.8em;
+            /* Sizes the switch */
+            // margin: 1em;
+        }
+
+        .rocker::before {
+            content: "";
+            position: absolute;
+            top: 0.5em;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #999;
+            border: 0.5em solid #eee;
+            border-bottom: 0;
+        }
+
+        .rocker input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .switch-left,
+        .switch-right {
+            cursor: pointer;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.5em;
+            width: 3em;
+            transition: 0.2s;
+            user-select: none;
+        }
+
+        .switch-left {
+            height: 2.4em;
+            width: 2.75em;
+            left: 0.85em;
+            bottom: 0.4em;
+            background-color: #ddd;
+            transform: rotate(15deg) skewX(15deg);
+        }
+
+        .switch-right {
+            right: 0.5em;
+            bottom: 0;
+            background-color: rgb(205, 13, 45);
+            color: rgb(254, 203, 0);
+        }
+
+        .switch-left::before,
+        .switch-right::before {
+            content: "";
+            position: absolute;
+            width: 0.4em;
+            height: 2.45em;
+            bottom: -0.45em;
+            background-color: #ccc;
+            transform: skewY(-65deg);
+        }
+
+        .switch-left::before {
+            left: -0.4em;
+        }
+
+        .switch-right::before {
+            right: -0.375em;
+            background-color: transparent;
+            transform: skewY(65deg);
+        }
+
+        input:checked+.switch-left {
+            background-color: rgb(11, 76, 130);
+            color: rgb(255, 111, 128);
+            bottom: 0px;
+            left: 0.5em;
+            height: 2.5em;
+            width: 3em;
+            transform: rotate(0deg) skewX(0deg);
+        }
+
+        input:checked+.switch-left::before {
+            background-color: transparent;
+            width: 3.0833em;
+        }
+
+        input:checked+.switch-left+.switch-right {
+            background-color: #ddd;
+            color: #888;
+            bottom: 0.4em;
+            right: 0.8em;
+            height: 2.4em;
+            width: 2.75em;
+            transform: rotate(-15deg) skewX(-15deg);
+        }
+
+        input:checked+.switch-left+.switch-right::before {
+            background-color: #ccc;
+        }
+
+        /* Keyboard Users */
+        input:focus+.switch-left {
+            color: #333;
+        }
+
+        input:checked:focus+.switch-left {
+            color: rgb(255, 111, 128);
+        }
+
+        input:focus+.switch-left+.switch-right {
+            color: rgb(254, 203, 0);
+        }
+
+        input:checked:focus+.switch-left+.switch-right {
+            color: #333;
+        }
+    }
 
 }

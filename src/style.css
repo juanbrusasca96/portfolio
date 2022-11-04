@@ -26,7 +26,7 @@
       background-color: #ff013c; }
 
 .aboutMe {
-  padding-top: 5%;
+  padding-top: 2%;
   /* From uiverse.io by @mrhyddenn */ }
   .aboutMe p {
     font-family: 'Fira Code', monospace; }
@@ -39,18 +39,46 @@
     font-size: 1.430vw;
     margin: 1% 5% 0 5%;
     text-align: center; }
-  .aboutMe span {
+  .aboutMe .myName {
     color: #ff013c;
     font-weight: 800; }
+  .aboutMe .scroll .container_mouse {
+    padding-top: 15%; }
+  .aboutMe .scroll .mouse-btn {
+    margin: 10% auto;
+    width: 20px;
+    height: 40px;
+    border: 3px solid rgba(122, 122, 124, 0.918);
+    border-radius: 20px;
+    display: flex; }
+  .aboutMe .scroll .mouse-scroll {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), #7b7c7c);
+    border-radius: 50%;
+    margin: auto;
+    animation: scrolling13 1s linear infinite; }
+
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(10px); } }
   .aboutMe .download {
-    margin: 2%; }
+    margin: 1%;
+    width: 30%; }
+    .aboutMe .download a {
+      text-decoration: none;
+      color: #fff; }
     .aboutMe .download button,
     .aboutMe .download button::after {
       padding: 10px 20px;
       font-size: 18px;
       background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
       border: 0;
-      color: #fff;
       letter-spacing: 3px;
       line-height: 1;
       box-shadow: 6px 0px 0px #07182E;
@@ -284,6 +312,114 @@
     background: transparent; }
   100% {
     background: #ffffff; } }
+  .aboutMe .switch {
+    padding: 0% 5% 0 5%;
+    /* Switch starts here */
+    /* Keyboard Users */ }
+    .aboutMe .switch .rocker {
+      display: inline-block;
+      position: relative;
+      /*
+    SIZE OF SWITCH
+    ==============
+    All sizes are in em - therefore
+    changing the font-size here
+    will change the size of the switch.
+    See .rocker-small below as example.
+    */
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: #888;
+      width: 7em;
+      height: 3.5em;
+      overflow: hidden;
+      border-bottom: 0.5em solid #eee; }
+    .aboutMe .switch .rocker-small {
+      font-size: 0.8em;
+      /* Sizes the switch */ }
+    .aboutMe .switch .rocker::before {
+      content: "";
+      position: absolute;
+      top: 0.5em;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #999;
+      border: 0.5em solid #eee;
+      border-bottom: 0; }
+    .aboutMe .switch .rocker input {
+      opacity: 0;
+      width: 0;
+      height: 0; }
+    .aboutMe .switch .switch-left,
+    .aboutMe .switch .switch-right {
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.5em;
+      width: 3em;
+      transition: 0.2s;
+      user-select: none; }
+    .aboutMe .switch .switch-left {
+      height: 2.4em;
+      width: 2.75em;
+      left: 0.85em;
+      bottom: 0.4em;
+      background-color: #ddd;
+      transform: rotate(15deg) skewX(15deg); }
+    .aboutMe .switch .switch-right {
+      right: 0.5em;
+      bottom: 0;
+      background-color: #cd0d2d;
+      color: #fecb00; }
+    .aboutMe .switch .switch-left::before,
+    .aboutMe .switch .switch-right::before {
+      content: "";
+      position: absolute;
+      width: 0.4em;
+      height: 2.45em;
+      bottom: -0.45em;
+      background-color: #ccc;
+      transform: skewY(-65deg); }
+    .aboutMe .switch .switch-left::before {
+      left: -0.4em; }
+    .aboutMe .switch .switch-right::before {
+      right: -0.375em;
+      background-color: transparent;
+      transform: skewY(65deg); }
+    .aboutMe .switch input:checked + .switch-left {
+      background-color: #0b4c82;
+      color: #ff6f80;
+      bottom: 0px;
+      left: 0.5em;
+      height: 2.5em;
+      width: 3em;
+      transform: rotate(0deg) skewX(0deg); }
+    .aboutMe .switch input:checked + .switch-left::before {
+      background-color: transparent;
+      width: 3.0833em; }
+    .aboutMe .switch input:checked + .switch-left + .switch-right {
+      background-color: #ddd;
+      color: #888;
+      bottom: 0.4em;
+      right: 0.8em;
+      height: 2.4em;
+      width: 2.75em;
+      transform: rotate(-15deg) skewX(-15deg); }
+    .aboutMe .switch input:checked + .switch-left + .switch-right::before {
+      background-color: #ccc; }
+    .aboutMe .switch input:focus + .switch-left {
+      color: #333; }
+    .aboutMe .switch input:checked:focus + .switch-left {
+      color: #ff6f80; }
+    .aboutMe .switch input:focus + .switch-left + .switch-right {
+      color: #fecb00; }
+    .aboutMe .switch input:checked:focus + .switch-left + .switch-right {
+      color: #333; }
 
 .skills .icon {
   color: white;

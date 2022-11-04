@@ -8,17 +8,20 @@ import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import { LanguageProvider } from './helpers/LanguageContext';
 
 function App() {
   return (
-    <div className="App">
-      <AboutMe />
-      <Navbar />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <AboutMe />
+        <Navbar />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

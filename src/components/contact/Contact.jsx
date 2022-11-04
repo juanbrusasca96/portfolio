@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 import { Button, Grid, TextField } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { LanguageContext } from '../../helpers/LanguageContext';
 
 
 const CssTextField = styled(TextField)({
@@ -69,6 +70,7 @@ export function validateMessage(input, errorsParam) {
 };
 
 export default function Contact() {
+  const [spanish] = useContext(LanguageContext)
   const [errors, setErrors] = useState({
     name: '',
     email: '',
@@ -119,15 +121,15 @@ export default function Contact() {
     <Grid container direction="column" alignItems="center" xs={12} className='contact section' id='contact'>
       <Grid item container className='contactTitle'>
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
-          <h1>Contacto</h1>
+          <h1>{spanish ? 'Contacto' : 'Contact'}</h1>
         </AnimationOnScroll>
       </Grid>
       <Grid item container direction="column" xs={7} p={`2%`} className="form">
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRightBig">
           <form action="https://formsubmit.co/juanbrusasca96@gmail.com" method='POST' >
             {errors.name === 'name is required' ?
-              <CssTextField label="Nombre" id="custom-css-outlined-input" variant="standard" className="input" name='name' value={input['name']} onChange={handleNameInputChange} error helperText={errors['name']} /> :
-              <CssTextField label="Nombre" id="custom-css-outlined-input" variant="standard" className="input" name='name' value={input['name']} onChange={handleNameInputChange} />
+              <CssTextField label={spanish ? "Nombre" : 'Name'} id="custom-css-outlined-input" variant="standard" className="input" name='name' value={input['name']} onChange={handleNameInputChange} error helperText={errors['name']} /> :
+              <CssTextField label={spanish ? "Nombre" : 'Name'} id="custom-css-outlined-input" variant="standard" className="input" name='name' value={input['name']} onChange={handleNameInputChange} />
             }
             {errors.email === 'email is required' || errors.email === 'invalid email' ?
               <CssTextField label="Email" id="custom-css-outlined-input" variant="standard" className="input" name='email' value={input['email']} onChange={handleEmailInputChange} error helperText={errors['email']} /> :
@@ -135,14 +137,14 @@ export default function Contact() {
 
             }
             {errors.message === 'message is required' ?
-              <CssTextField label="Mensaje" id="custom-css-outlined-input" variant="standard" className="input" multiline rows={5} name='message' value={input['message']} onChange={handleMessageInputChange} error helperText={errors['message']} /> :
-              <CssTextField label="Mensaje" id="custom-css-outlined-input" variant="standard" className="input" multiline rows={5} name='message' value={input['message']} onChange={handleMessageInputChange} />
+              <CssTextField label={spanish ? "Mensaje" : 'Message'} id="custom-css-outlined-input" variant="standard" className="input" multiline rows={5} name='message' value={input['message']} onChange={handleMessageInputChange} error helperText={errors['message']} /> :
+              <CssTextField label={spanish ? "Mensaje" : 'Message'} id="custom-css-outlined-input" variant="standard" className="input" multiline rows={5} name='message' value={input['message']} onChange={handleMessageInputChange} />
 
             }
             <input type="hidden" name="_subject" value="Portfolio contacto" />
             <input type="hidden" name="_next" value="http://localhost:3000" />
             {
-              input.name && input.email && input.message && errors.email !== 'invalid email' ? <Button variant="contained" className='button' type="submit">Enviar</Button> : <Button variant="contained" disabled style={{ color: 'black', backgroundColor: 'grey', fontWeight: 'bold' }}>Enviar</Button>
+              input.name && input.email && input.message && errors.email !== 'invalid email' ? <Button variant="contained" className='button' type="submit">Enviar</Button> : <Button variant="contained" disabled style={{ color: 'black', backgroundColor: 'grey', fontWeight: 'bold' }}>{spanish ? 'Enviar' : 'Send'}</Button>
             }
 
           </form>
