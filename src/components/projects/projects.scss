@@ -9,8 +9,8 @@
         .card {
             width: 12rem;
             cursor: pointer;
-            width: 250px;
-            height: 250px;
+            width:18.302vw;
+            height: 18.302vw;
 
 
 
@@ -94,14 +94,14 @@
             justify-content: center;
             margin: 3%;
             margin-top: 4%;
-            font-size: 15px;
+            font-size: 1.098vw;
             font-family: inherit;
             font-weight: 700;
-            padding: 4px;
-            border-radius: 20px;
+            padding: 0.293vw;
+            border-radius: 1.464vw;
             border: none;
             color: white;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1.464vw 1.830vw -0.366vw, rgba(0, 0, 0, 0.04) 0px 0.732vw 0.732vw -0.366vw;
             background: $redButton;
         }
 
@@ -109,15 +109,15 @@
             display: flex;
             align-items: center;
             // background: white;
-            padding: 8px 14px;
-            padding-left: 10px;
-            border-radius: 16px;
+            padding: 0.586vw 1.025vw;
+            padding-left: 0.732vw;
+            border-radius: 1.171vw;
         }
 
         button svg {
-            width: 22px;
-            height: 22px;
-            margin-right: 6px;
+            width: 1.611vw;
+            height: 1.611vw;
+            margin-right: 0.439vw;
             color: white;
             transition: transform 0.3s;
         }
