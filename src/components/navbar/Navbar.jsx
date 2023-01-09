@@ -2,15 +2,13 @@ import { Grid, Typography } from '@mui/material'
 import React, { useContext, useEffect, useState } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { LanguageContext } from '../../helpers/LanguageContext'
+import { NavbarFixedContext } from '../../helpers/NavbarFixedContext'
 
 export default function Navbar() {
     const [spanish] = useContext(LanguageContext)
     const [active, setActive] = useState("aboutMe")
-    const [fixedNavBar, setFixedNavbar] = useState(false)
-    const [initialNavbarPosition, setInitialNavbarPosition] = useState();
+    const [fixedNavBar, setFixedNavbar, initialNavbarPosition, setInitialNavbarPosition] = useContext(NavbarFixedContext)
     const [scrollTop, setScrollTop] = useState(0)
-
-
 
     const onScroll = () => {
         const winScroll = document.documentElement.scrollTop;
@@ -70,7 +68,7 @@ export default function Navbar() {
                 <Grid item container spacing={4} justifyContent="center">
                     <Grid item className="options" style={{ padding: "16px" }}>
                         <Typography>
-                            <a href="#aboutMe" className={"link"} style={active === 'aboutMe' ? { color: '#ff013c' } : {}} id='aboutMeLink'>{spanish ? 'SOBRE MI' : 'ABOUT ME'}</a>
+                            <a href="#aboutMe" className={"link"} style={active === 'aboutMe' ? { color: '#e55554' } : {}} id='aboutMeLink'>{spanish ? 'SOBRE MI' : 'ABOUT ME'}</a>
                         </Typography>
                     </Grid>
                     <Grid item className="options" style={{ padding: "16px" }}>
@@ -80,7 +78,7 @@ export default function Navbar() {
                     </Grid>
                     <Grid item className="options" style={{ padding: "16px" }}>
                         <Typography>
-                            <a href="#skills" className={"link"} style={active === 'skills' ? { color: '#ff013c' } : {}} id='skillsLink'>{spanish ? 'LENGUAJES Y HERRAMIENTAS' : 'SKILLS'}</a>
+                            <a href="#skills" className={"link"} style={active === 'skills' ? { color: '#e55554' } : {}} id='skillsLink'>{spanish ? 'LENGUAJES Y HERRAMIENTAS' : 'SKILLS'}</a>
                         </Typography>
                     </Grid>
                     <Grid item className="options" style={{ padding: "16px" }}>
@@ -90,7 +88,7 @@ export default function Navbar() {
                     </Grid>
                     <Grid item className="options" style={{ padding: "16px" }}>
                         <Typography>
-                            <a href="#projects" className={"link"} style={active === 'projects' ? { color: '#ff013c' } : {}} id='projectsLink'>{spanish ? 'PROYECTOS' : 'PROJECTS'}</a>
+                            <a href="#projects" className={"link"} style={active === 'projects' ? { color: '#e55554' } : {}} id='projectsLink'>{spanish ? 'PROYECTOS' : 'PROJECTS'}</a>
                         </Typography>
                     </Grid>
                     <Grid item className="options" style={{ padding: "16px" }}>
@@ -100,7 +98,7 @@ export default function Navbar() {
                     </Grid>
                     <Grid item className="options" style={{ padding: "16px" }}>
                         <Typography>
-                            <a href="#contact" className={"link"} style={active === 'contact' ? { color: '#ff013c' } : {}} id='contactLink'>{spanish ? 'CONTACTO' : 'CONTACT'}</a>
+                            <a href="#contact" className={"link"} style={active === 'contact' ? { color: '#e55554' } : {}} id='contactLink'>{spanish ? 'CONTACTO' : 'CONTACT'}</a>
                         </Typography>
                     </Grid>
                 </Grid>
