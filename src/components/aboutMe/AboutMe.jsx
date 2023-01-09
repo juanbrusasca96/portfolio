@@ -34,7 +34,7 @@ export default function AboutMe() {
                 </div>
             </div>
             <Grid item container xs={12} mt={`1%`}>
-                <Grid item container justifyContent="center" alignItems="center" xs={3}>
+                <Grid item container justifyContent="center" alignItems="center" xs={2}>
                     {/* <Avatar src={avatar} sx={{ width: 64, height: 64 }} className='name' />
                     <Typography className='name'>
                         Hola, soy <span>Juan</span>
@@ -43,7 +43,7 @@ export default function AboutMe() {
                         <div className="card">
                             <div className="img">
                                 {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"><path fill="none" d="M0 0h24v24H0z"></path><path d="M4.828 21l-.02.02-.021-.02H2.992A.993.993 0 0 1 2 20.007V3.993A1 1 0 0 1 2.992 3h18.016c.548 0 .992.445.992.993v16.014a1 1 0 0 1-.992.993H4.828zM20 15V5H4v14L14 9l6 6zm0 2.828l-6-6L6.828 19H20v-1.172zM8 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="rgba(236,240,241,1)"></path></svg> */}
-                                <Avatar src={avatar} sx={{ width: 84, height: 84 }} className='name' />
+                                <Avatar src={avatar}  className='name' />
                             </div>
                             <h1>{spanish ? 'Hola, soy ' : 'Hi, i am '} <span className='myName'>Juan</span></h1>
                             <h5>HOVER ME!</h5>
@@ -71,7 +71,7 @@ export default function AboutMe() {
                         </AnimationOnScroll>
                     </AnimationOnScroll>
                 </Grid>
-                <Grid item container direction="column" justifyContent="center" alignItems="center" xs={9}>
+                <Grid item container direction="column" justifyContent="center" alignItems="center" xs={10}>
                     <Grid item>
                         <AnimationOnScroll offset={0} animateOnce={true} animateIn="animate__fadeInLeftBig">
                             {/* <Typography className='text'>
@@ -91,7 +91,7 @@ export default function AboutMe() {
                                     <div className="terminal_promt">
                                         <span className="terminal_user">juanbrusasca@admin:</span>
                                         <span className="terminal_location">~</span>
-                                        <span className="terminal_bling">{spanish ? '$ Soy desarrollador fullstack. Soy un apasionado de la programación y de la lógica. Disfruto estar sentado programando, incluso durante largas horas cuando me trabo con algo. Y ni hablar de la hermosa sensación que me genera cuando ese programa sale andando como quiero. Soy un fiel creyente del trabajo duro, la perseverancia y el nunca rendirse, y considero que esto se complementa bien con mi gusto por programar. Soy estudiante de Licenciatura en Ciencias de la Computación en la Universidad Nacional de Córdoba.' : "$ I am a fullstack developer. I am passionate about programming and logic. I enjoy programming, even for long hours when I get stuck with something. I love the beautiful feeling I get when that program works the way I want it to. I am a believer in hard work, perseverance and never giving up, and I think this complements well with my love for programming. I am a student of Computer Science at the National University of Córdoba."}<span className="terminal_cursor"></span></span>
+                                        <span className="terminal_bling">{spanish ? '$ Full Stack Developer con formación como Diseñador Web. Experiencia trabajando en NodeJS, React, Redux, SQL entre otras tecnologías del sector. Con pensamiento creativo, resolución de problemas, trabajo en equipo, comunicación y autonomía. Soy un apasionado de la programación y de la lógica. Disfruto estar sentado programando, incluso durante largas horas cuando me trabo con algo. Amo la sensación que me genera cuando ese programa sale andando como quiero. Soy un fiel creyente del trabajo duro y el nunca rendirse, y considero que esto se complementa bien con mi gusto por programar.' : "$ Full Stack Developer with a background as a Web Designer. Experience working in NodeJS, React, Redux, SQL among other technologies in the industry. With creative thinking, problem solving, teamwork, communication and autonomy. I am passionate about programming and logic. I enjoy programming, even for long hours when I get stuck with something. I love the beautiful feeling I get when that program works the way I want it to. I am a believer in hard work and never giving up, and I think this complements well with my love for programming."}<span className="terminal_cursor"></span></span>
                                     </div>
                                 </div>
                             </div>
