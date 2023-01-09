@@ -2,12 +2,14 @@ import { Grid, SvgIcon, Tooltip } from '@mui/material'
 import React, { useContext } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { LanguageContext } from '../../helpers/LanguageContext'
+import { NavbarFixedContext } from '../../helpers/NavbarFixedContext'
 
 export default function Skills() {
     const [spanish] = useContext(LanguageContext)
+    const [fixedNavBar, setFixedNavbar, initialNavbarPosition, setInitialNavbarPosition] = useContext(NavbarFixedContext)
 
     return (
-        <Grid container direction="column" className='skills section' xs={12} p={`5%`} id='skills'>
+        <Grid container direction="column" className='skills section' xs={12} p={`5%`} pt={fixedNavBar ? `10%` : ''} id='skills'>
             <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
                 <h1>{spanish ? 'Lenguajes y herramientas' : 'Skills'}</h1>
             </AnimationOnScroll>
