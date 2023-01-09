@@ -9,18 +9,21 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import { LanguageProvider } from './helpers/LanguageContext';
+import { NavbarFixedProvider } from './helpers/NavbarFixedContext';
 
 function App() {
   return (
     <LanguageProvider>
-      <div className="App">
-        <AboutMe />
-        <Navbar />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
+      <NavbarFixedProvider>
+        <div className="App">
+          <AboutMe />
+          <Navbar />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+        </div>
+      </NavbarFixedProvider>
     </LanguageProvider>
   );
 }

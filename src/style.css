@@ -12,18 +12,18 @@
       font-weight: bold;
       font-size: 1.464vw; }
     .navbarAnimation .navbar .active {
-      color: #ff013c; }
+      color: #e55554; }
     .navbarAnimation .navbar .progressMainWrapper {
-      background-color: #b8566d;
-      height: 7px;
+      background-color: #2b264c;
+      height: 0.512vw;
       position: sticky;
       top: 0;
       left: 0;
       z-index: 1;
       width: 100%; }
     .navbarAnimation .navbar .progressMainStyle {
-      height: 7px;
-      background-color: #ff013c; }
+      height: 0.512vw;
+      background-color: #e55554; }
 
 .aboutMe {
   padding-top: 2%;
@@ -34,13 +34,15 @@
     font-size: 1.830vw;
     font-weight: 500;
     margin: 1%;
-    margin-top: 3%; }
+    margin-top: 3%;
+    width: 6.149vw;
+    height: 6.149vw; }
   .aboutMe .text {
     font-size: 1.430vw;
     margin: 1% 5% 0 5%;
     text-align: center; }
   .aboutMe .myName {
-    color: #ff013c;
+    color: #e55554;
     font-weight: 800; }
   .aboutMe .scroll .container_mouse {
     padding-top: 15%; }
@@ -75,24 +77,24 @@
       color: #fff; }
     .aboutMe .download button,
     .aboutMe .download button::after {
-      padding: 10px 20px;
-      font-size: 18px;
-      background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+      padding: 0.732vw 1.464vw;
+      font-size: 1.318vw;
+      background: linear-gradient(45deg, transparent 5%, #e55554 5%);
       border: 0;
-      letter-spacing: 3px;
+      letter-spacing: 0.220vw;
       line-height: 1;
-      box-shadow: 6px 0px 0px #07182E;
+      box-shadow: 0.439vw 0px 0px #07182E;
       outline: transparent;
       position: relative;
       cursor: pointer;
       font-family: 'Fira Code', monospace; }
     .aboutMe .download button::after {
       --slice-0: inset(50% 50% 50% 50%);
-      --slice-1: inset(80% -6px 0 0);
-      --slice-2: inset(50% -6px 30% 0);
-      --slice-3: inset(10% -6px 85% 0);
-      --slice-4: inset(40% -6px 43% 0);
-      --slice-5: inset(80% -6px 5% 0);
+      --slice-1: inset(80% -0.439vw 0 0);
+      --slice-2: inset(50% -0.439vw 30% 0);
+      --slice-3: inset(10% -0.439vw 85% 0);
+      --slice-4: inset(40% -0.439vw 43% 0);
+      --slice-5: inset(80% -0.439vw 5% 0);
       content: "HOVER ME";
       display: block;
       position: absolute;
@@ -100,8 +102,8 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(45deg, transparent 3%, #07182E 3%, #07182E 5%, #ff013c 5%);
-      text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #07182E;
+      background: linear-gradient(45deg, transparent 3%, #07182E 3%, #07182E 5%, #e55554 5%);
+      text-shadow: -0.22vw -0.22vw 0px #ffa600, 0.22vw 0.22vw 0px #07182E;
       clip-path: var(--slice-0);
       animation: 2s glitch infinite;
       animation-timing-function: steps(2, end); }
@@ -112,40 +114,40 @@
 @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
-    transform: translate(-20px, -10px); }
+    transform: translate(-1.464vw, -0.732vw); }
   10% {
     clip-path: var(--slice-3);
-    transform: translate(10px, 10px); }
+    transform: translate(0.732vw, 0.732vw); }
   20% {
     clip-path: var(--slice-1);
-    transform: translate(-10px, 10px); }
+    transform: translate(-0.732vw, 0.732vw); }
   30% {
     clip-path: var(--slice-3);
-    transform: translate(0px, 5px); }
+    transform: translate(0px, 0.366vw); }
   40% {
     clip-path: var(--slice-2);
-    transform: translate(-5px, 0px); }
+    transform: translate(-0.366vw, 0px); }
   50% {
     clip-path: var(--slice-3);
-    transform: translate(5px, 0px); }
+    transform: translate(0.366vw, 0px); }
   60% {
     clip-path: var(--slice-4);
-    transform: translate(5px, 10px); }
+    transform: translate(0.366vw, 0.732vw); }
   70% {
     clip-path: var(--slice-2);
-    transform: translate(-10px, 10px); }
+    transform: translate(-0.732vw, 0.732vw); }
   80% {
     clip-path: var(--slice-5);
-    transform: translate(20px, -10px); }
+    transform: translate(1.464vw, -0.732vw); }
   90% {
     clip-path: var(--slice-1);
-    transform: translate(-10px, 0px); }
+    transform: translate(-0.732vw, 0px); }
   100% {
     clip-path: var(--slice-1);
     transform: translate(0); } }
   .aboutMe .scanner h1 {
     color: transparent;
-    font-size: 1.4rem;
+    font-size: 1.640vw;
     position: relative;
     overflow: hidden; }
   .aboutMe .scanner h1::before {
@@ -155,7 +157,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    border-right: 4px solid white;
+    border-right: 0.293vw solid white;
     overflow: hidden;
     color: white;
     animation: load91371 3s linear infinite; }
@@ -190,10 +192,11 @@
   80% {
     width: 100%; } }
   .aboutMe .card {
-    width: 200px;
-    height: 250px;
+    margin-left: 10%;
+    width: 14.641vw;
+    height: 18.302vw;
     background: #07182E;
-    border-radius: 5px;
+    border-radius: 0.366vw;
     text-align: center;
     color: #f0f0f0;
     font-family: 'Fira Code', monospace;
@@ -201,49 +204,50 @@
     padding-top: 1%; }
     .aboutMe .card .img {
       display: flex;
-      margin: 30px auto 10px auto;
-      width: 75px;
-      height: 75px;
-      border: 1px solid #f0f0f0;
+      margin: 2.196vw auto 0.732vw auto;
+      width: 5.490vw;
+      height: 5.490vw;
+      border: 0.073vw solid #f0f0f0;
       border-radius: 50%;
-      font-size: 11px;
+      font-size: 0.805vw;
       justify-content: center;
       align-items: center;
       transition: all 0.5s;
       z-index: 99;
-      background-color: #152f50; }
+      background-color: #07182E; }
     .aboutMe .card p {
       opacity: 0;
       transition: all 0.5s; }
     .aboutMe .card h1 {
-      padding: 5px;
+      padding: 0.366vw;
       font-weight: 500;
-      font-size: 18px;
+      font-size: 1.318vw;
       margin: 0; }
     .aboutMe .card h5 {
       padding: 0;
       margin: 0;
-      color: gray; }
+      color: gray;
+      font-size: 0.952vw; }
     .aboutMe .card svg {
-      padding: 0 5px;
+      padding: 0 0.366vw;
       cursor: pointer; }
   .aboutMe .card:hover .img {
     transform: scale(1.1);
-    border: 1px solid #f0f0f0; }
+    border: 0.073vw solid #f0f0f0; }
   .aboutMe .card:hover h1,
   .aboutMe .card:hover p {
     opacity: 1; }
   .aboutMe .container {
     font-size: 1.430vw;
-    margin: 1% 5% 0 5%; }
+    margin: 1% 3% 0 3%; }
     .aboutMe .container .terminal_toolbar {
       display: flex;
-      height: 30px;
+      height: 2.196vw;
       align-items: center;
-      padding: 0 8px;
+      padding: 0 0.586vw;
       box-sizing: border-box;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;
+      border-top-left-radius: 0.366vw;
+      border-top-right-radius: 0.366vw;
       background: linear-gradient(#504b45 0%, #3c3b37 100%); }
     .aboutMe .container .butt {
       display: flex;
@@ -253,15 +257,15 @@
       justify-content: center;
       align-items: center;
       padding: 0;
-      margin-right: 5px;
-      height: 12px;
-      width: 12px;
+      margin-right: 0.366vw;
+      height: 0.878vw;
+      width: 0.878vw;
       box-sizing: border-box;
       border: none;
       border-radius: 100%;
       background: linear-gradient(#7d7871 0%, #595953 100%);
-      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
-      box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642; }
+      text-shadow: 0px 0.073vw 0px rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 0px 0.073vw 0px #41403A, 0px 0.073vw 0.073vw 0px #474642; }
     .aboutMe .container .btn-color {
       background: #ee411a; }
     .aboutMe .container .btn:hover {
@@ -272,20 +276,20 @@
       background: linear-gradient(#f37458 0%, #de4c12 100%); }
     .aboutMe .container .user {
       color: #d5d0ce;
-      margin-left: 6px;
-      font-size: 14px;
-      line-height: 15px; }
+      margin-left: 0.439vw;
+      font-size: 1.025vw;
+      line-height: 1.098vw; }
     .aboutMe .container .terminal_body {
       background: #07182E;
-      height: calc(100% - 30px);
-      padding-top: 2px;
-      margin-top: -1px;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px; }
+      height: calc(100% - 2.196vw);
+      padding-top: 0.146vw;
+      margin-top: -0.073vw;
+      border-bottom-left-radius: 0.366vw;
+      border-bottom-right-radius: 0.366vw; }
     .aboutMe .container .terminal_promt {
       display: flex; }
     .aboutMe .container .terminal_promt span {
-      margin-left: 4px; }
+      margin-left: 0.293vw; }
     .aboutMe .container .terminal_user {
       color: #7eda28; }
     .aboutMe .container .terminal_location {
@@ -296,8 +300,8 @@
     .aboutMe .container .terminal_cursor {
       display: block;
       height: 1.430vw;
-      width: 10px;
-      margin-left: 10px;
+      width: 0.732vw;
+      margin-left: 0.732vw;
       animation: curbl 1200ms linear infinite;
       margin-bottom: 1%; }
 
@@ -327,27 +331,27 @@
     will change the size of the switch.
     See .rocker-small below as example.
     */
-      font-size: 2em;
+      font-size: 2.343vw;
       font-weight: bold;
       text-align: center;
       text-transform: uppercase;
       color: #888;
-      width: 7em;
-      height: 3.5em;
+      width: 8.199vw;
+      height: 4.100vw;
       overflow: hidden;
-      border-bottom: 0.5em solid #eee; }
+      border-bottom: 0.586vw solid #eee; }
     .aboutMe .switch .rocker-small {
-      font-size: 0.8em;
+      font-size: 0.937vw;
       /* Sizes the switch */ }
     .aboutMe .switch .rocker::before {
       content: "";
       position: absolute;
-      top: 0.5em;
+      top: 0.586vw;
       left: 0;
       right: 0;
       bottom: 0;
       background-color: #999;
-      border: 0.5em solid #eee;
+      border: 0.586vw solid #eee;
       border-bottom: 0; }
     .aboutMe .switch .rocker input {
       opacity: 0;
@@ -360,19 +364,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 2.5em;
-      width: 3em;
+      height: 2.928vw;
+      width: 3.514vw;
       transition: 0.2s;
       user-select: none; }
     .aboutMe .switch .switch-left {
-      height: 2.4em;
-      width: 2.75em;
-      left: 0.85em;
-      bottom: 0.4em;
+      height: 2.811vw;
+      width: 3.221vw;
+      left: 0.996vw;
+      bottom: 0.469vw;
       background-color: #ddd;
       transform: rotate(15deg) skewX(15deg); }
     .aboutMe .switch .switch-right {
-      right: 0.5em;
+      right: 0.586vw;
       bottom: 0;
       background-color: #cd0d2d;
       color: #fecb00; }
@@ -380,35 +384,35 @@
     .aboutMe .switch .switch-right::before {
       content: "";
       position: absolute;
-      width: 0.4em;
-      height: 2.45em;
-      bottom: -0.45em;
+      width: 0.469vw;
+      height: 2.870vw;
+      bottom: -0.527vw;
       background-color: #ccc;
       transform: skewY(-65deg); }
     .aboutMe .switch .switch-left::before {
-      left: -0.4em; }
+      left: -0.469vw; }
     .aboutMe .switch .switch-right::before {
-      right: -0.375em;
+      right: -0.439vw;
       background-color: transparent;
       transform: skewY(65deg); }
     .aboutMe .switch input:checked + .switch-left {
       background-color: #0b4c82;
       color: #ff6f80;
       bottom: 0px;
-      left: 0.5em;
-      height: 2.5em;
-      width: 3em;
+      left: 0.586vw;
+      height: 2.928vw;
+      width: 3.514vw;
       transform: rotate(0deg) skewX(0deg); }
     .aboutMe .switch input:checked + .switch-left::before {
       background-color: transparent;
-      width: 3.0833em; }
+      width: 3.611vw; }
     .aboutMe .switch input:checked + .switch-left + .switch-right {
       background-color: #ddd;
       color: #888;
-      bottom: 0.4em;
-      right: 0.8em;
-      height: 2.4em;
-      width: 2.75em;
+      bottom: 0.469vw;
+      right: 0.937vw;
+      height: 2.811vw;
+      width: 3.221vw;
       transform: rotate(-15deg) skewX(-15deg); }
     .aboutMe .switch input:checked + .switch-left + .switch-right::before {
       background-color: #ccc; }
@@ -428,7 +432,7 @@
     width: 7.321vw;
     height: 7.321vw; }
   .skills .icon:hover {
-    color: #ff013c; }
+    color: #e55554; }
 
 .projects a {
   text-decoration: none;
@@ -437,8 +441,8 @@
 .projects .cardProject .card {
   width: 12rem;
   cursor: pointer;
-  width: 250px;
-  height: 250px; }
+  width: 18.302vw;
+  height: 18.302vw; }
   .projects .cardProject .card .content {
     text-align: center;
     border-radius: 1.098vw;
@@ -480,7 +484,7 @@
     flex-direction: column;
     justify-content: space-between;
     transform: rotateY(0.5turn);
-    background-color: #ff013c;
+    background-color: #e55554;
     padding: 1%; }
     .projects .cardProject .card .back svg {
       font-size: 2.196vw;
@@ -494,27 +498,27 @@
   justify-content: center;
   margin: 3%;
   margin-top: 4%;
-  font-size: 15px;
+  font-size: 1.098vw;
   font-family: inherit;
   font-weight: 700;
-  padding: 4px;
-  border-radius: 20px;
+  padding: 0.293vw;
+  border-radius: 1.464vw;
   border: none;
   color: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-  background: #ff013c; }
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1.464vw 1.83vw -0.366vw, rgba(0, 0, 0, 0.04) 0px 0.732vw 0.732vw -0.366vw;
+  background: #e55554; }
 
 .projects .cardProject button .button-content {
   display: flex;
   align-items: center;
-  padding: 8px 14px;
-  padding-left: 10px;
-  border-radius: 16px; }
+  padding: 0.586vw 1.025vw;
+  padding-left: 0.732vw;
+  border-radius: 1.171vw; }
 
 .projects .cardProject button svg {
-  width: 22px;
-  height: 22px;
-  margin-right: 6px;
+  width: 1.611vw;
+  height: 1.611vw;
+  margin-right: 0.439vw;
   color: white;
   transition: transform 0.3s; }
 
@@ -529,9 +533,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; }
+  gap: 1.464vw; }
   .contact .form form .button {
-    background-color: #ff013c; }
+    background-color: #e55554; }
 
 .contact label {
   color: white;
@@ -552,19 +556,19 @@
   background-color: #333333;
   padding: 4%;
   padding-bottom: 1%;
-  gap: 30px; }
+  gap: 2.196vw; }
   .footer .social {
-    gap: 50px; }
+    gap: 3.660vw; }
     .footer .social svg {
-      font-size: 50px;
+      font-size: 3.660vw;
       transition: all .2s ease-in; }
       .footer .social svg:hover {
-        transform: translateY(-5px); }
+        transform: translateY(-0.366vw); }
   .footer .backToTop svg {
-    font-size: 35px; }
+    font-size: 2.562vw; }
   .footer hr {
     width: 70%;
-    border: 1px solid #484848; }
+    border: 0.073vw solid #484848; }
   .footer p {
     color: #616161; }
 
@@ -581,3 +585,7 @@ html {
   html a,
   html p {
     font-family: 'Fira Code', monospace; }
+  html h1 {
+    font-size: 1.830vw; }
+  html h5 {
+    font-size: 0.952vw; }
