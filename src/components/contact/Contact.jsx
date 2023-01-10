@@ -144,7 +144,7 @@ export default function Contact() {
             <input type="hidden" name="_subject" value="Portfolio contacto" />
             <input type="hidden" name="_next" value="https://juanbrusasca.netlify.app/" />
             {
-              input.name && input.email && input.message && errors.email !== 'invalid email' ? <Button variant="contained" className='button' type="submit">Enviar</Button> : <Button variant="contained" disabled style={{ color: 'black', backgroundColor: 'grey', fontWeight: 'bold' }}>{spanish ? 'Enviar' : 'Send'}</Button>
+              input.name && input.email && input.message && errors.email !== 'invalid email' ? <Button variant="contained" className='button' type="submit">{spanish ? 'Enviar' : 'Send'}</Button> : <Button variant="contained" className='button' disabled style={{ color: 'black', backgroundColor: 'grey', fontWeight: 'bold' }}>{spanish ? 'Enviar' : 'Send'}</Button>
             }
 
           </form>
