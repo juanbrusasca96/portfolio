@@ -64,39 +64,39 @@ export default function Navbar() {
     return (
 
         <AnimationOnScroll offset={0} delay={1200} animateOnce={true} animateIn="animate__fadeInLeftBig" className='navbarAnimation' style={fixedNavBar ? { position: 'fixed', top: '0' } : {}}>
-            <Grid container direction="column" className="navbar" justifyContent="center" pt={`3%`}>
-                <Grid item container spacing={4} justifyContent="center">
-                    <Grid item className="options" style={{ padding: "16px" }}>
+            <Grid container direction="column" className="navbar" justifyContent="center" pt={`1%`}>
+                <Grid item container spacing={`0.5%`} justifyContent="center">
+                    <Grid item className="options" style={{ padding: "1.171vw" }}>
                         <Typography>
                             <a href="#aboutMe" className={"link"} style={active === 'aboutMe' ? { color: '#e55554' } : {}} id='aboutMeLink'>{spanish ? 'SOBRE MI' : 'ABOUT ME'}</a>
                         </Typography>
                     </Grid>
-                    <Grid item className="options" style={{ padding: "16px" }}>
+                    <Grid item className="options" style={{ padding: "1.171vw" }}>
                         <Typography>
                             |
                         </Typography>
                     </Grid>
-                    <Grid item className="options" style={{ padding: "16px" }}>
+                    <Grid item className="options" style={{ padding: "1.171vw" }}>
                         <Typography>
                             <a href="#skills" className={"link"} style={active === 'skills' ? { color: '#e55554' } : {}} id='skillsLink'>{spanish ? 'LENGUAJES Y HERRAMIENTAS' : 'SKILLS'}</a>
                         </Typography>
                     </Grid>
-                    <Grid item className="options" style={{ padding: "16px" }}>
+                    <Grid item className="options" style={{ padding: "1.171vw" }}>
                         <Typography>
                             |
                         </Typography>
                     </Grid>
-                    <Grid item className="options" style={{ padding: "16px" }}>
+                    <Grid item className="options" style={{ padding: "1.171vw" }}>
                         <Typography>
                             <a href="#projects" className={"link"} style={active === 'projects' ? { color: '#e55554' } : {}} id='projectsLink'>{spanish ? 'PROYECTOS' : 'PROJECTS'}</a>
                         </Typography>
                     </Grid>
-                    <Grid item className="options" style={{ padding: "16px" }}>
+                    <Grid item className="options" style={{ padding: "1.171vw" }}>
                         <Typography>
                             |
                         </Typography>
                     </Grid>
-                    <Grid item className="options" style={{ padding: "16px" }}>
+                    <Grid item className="options" style={{ padding: "1.171vw" }}>
                         <Typography>
                             <a href="#contact" className={"link"} style={active === 'contact' ? { color: '#e55554' } : {}} id='contactLink'>{spanish ? 'CONTACTO' : 'CONTACT'}</a>
                         </Typography>
