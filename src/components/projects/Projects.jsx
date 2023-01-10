@@ -43,9 +43,9 @@ export default function Projects() {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item p={`2%`} xs={6}>
+                            <Grid item p={`2%`} xs={5}>
                                 <Grid item>
-                                    <h3>{spanish ? 'League of legends Store es un proyecto personal, un e-commerce realizado a base de React en dónde se simula la compra de campeones (personajes dentro del juego) del conocido videojuego League of legends.' : 'League of legends Store is a personal project, an e-commerce based on React where the purchase of champions (in-game characters) of the popular video game League of legends is simulated.'}</h3>
+                                    <h3 className='description'>{spanish ? 'League of legends Store es un proyecto personal, un e-commerce realizado a base de React en dónde se simula la compra de campeones (personajes dentro del juego) del conocido videojuego League of legends.' : 'League of legends Store is a personal project, an e-commerce based on React where the purchase of champions (in-game characters) of the popular video game League of legends is simulated.'}</h3>
                                 </Grid>
                                 <Grid item container>
                                     <button>
@@ -68,9 +68,9 @@ export default function Projects() {
                     </AnimationOnScroll>
                     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
                         <Grid item container direction="row" justifyContent="flex-end" alignItems="center" className='cardProject'>
-                            <Grid item p={`2%`} xs={6}>
+                            <Grid item p={`2%`} xs={8}>
                                 <Grid item>
-                                    <h3 style={{ textAlign: "end" }}>{spanish ? 'Social Sound fue un proyecto que nació con el objetivo de conectar a músicos independientes con el publico. Se basa en compartir archivos audiovisuales con el fin de promocionar su música y, a su vez, interactuar con el contenido de otros artistas. También esta dedicada a usuarios que simplemente busquen explorar nuevos talentos musicales.' : 'Social Sound was a project that was born with the idea of ​​connecting independent musicians with the public. It is based on sharing audiovisual files in order to promote their music and, in turn, interact with the content of other artists. It is also dedicated to users who are simply looking to explore new musical talents.'}</h3>
+                                    <h3 style={{ textAlign: "end" }} className='description'>{spanish ? 'Social Sound fue un proyecto que nació con el objetivo de conectar a músicos independientes con el publico. Se basa en compartir archivos audiovisuales con el fin de promocionar su música y, a su vez, interactuar con el contenido de otros artistas. También esta dedicada a usuarios que simplemente busquen explorar nuevos talentos musicales.' : 'Social Sound was a project that was born with the idea of ​​connecting independent musicians with the public. It is based on sharing audiovisual files in order to promote their music and, in turn, interact with the content of other artists. It is also dedicated to users who are simply looking to explore new musical talents.'}</h3>
                                 </Grid>
                                 <Grid item container justifyContent="flex-end">
                                     <button>
@@ -145,9 +145,9 @@ export default function Projects() {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item p={`2%`} xs={6}>
+                            <Grid item p={`2%`} xs={9}>
                                 <Grid item>
-                                    <h3>{spanish ? 'PI Dogs es una aplicación en la cual se puedan ver distintas razas de perro junto con información relevante de las mismas utilizando una api externa y una base de datos propia y a partir de ella poder, entre otras cosas:' : 'PI Dogs is an application in which you can see different dog breeds along with relevant information about them using an external api and its own database and from it you can, among other things:'}
+                                    <h3 className='description'>{spanish ? 'PI Dogs es una aplicación en la cual se puedan ver distintas razas de perro junto con información relevante de las mismas utilizando una api externa y una base de datos propia y a partir de ella poder, entre otras cosas:' : 'PI Dogs is an application in which you can see different dog breeds along with relevant information about them using an external api and its own database and from it you can, among other things:'}
                                         <br />
                                         • {spanish ? 'Buscar perros' : 'Search dogs'}
                                         <br />
@@ -177,7 +177,7 @@ export default function Projects() {
                         <Grid item container direction="row" justifyContent="flex-end" alignItems="center" className='cardProject'>
                             <Grid item p={`2%`} xs={9}>
                                 <Grid item>
-                                    <h3 style={{ textAlign: "end" }}>{spanish ? 'Investmen Portfolio Calculator es una página donde el usuario puede calcular una cartera de inversión a partir de su edad y su perfi del inversor. Puede elegir que ETF especifico conformara cada parte de la cartera. Se calcula un rendimiento aproximado en los próximos 50 años teniendo en cuenta rendimientos pasados y el factor de una cartera se vuelve mas conservadora a medida que pasan los años. Por último encontramos una calculadora de interés compuesto. Se calculara el monto final luego de una cantidad de años partiendo de una inversión inicial y una tasa de interés.' : 'Investmen Portfolio Calculator is a page where the user can calculate an investment portfolio based on his age and investor profile. You can choose which specific ETF will make up each part of the portfolio. It calculates an approximate return over the next 50 years taking into account past returns and the factor of a portfolio becoming more conservative over time. Finally, there is a compound interest calculator. It will calculate the final amount after a number of years based on an initial investment and an interest rate.'}</h3>
+                                    <h3 style={{ textAlign: "end" }} className='description'>{spanish ? 'Investmen Portfolio Calculator es una página donde el usuario puede calcular una cartera de inversión a partir de su edad y su perfi del inversor. Puede elegir que ETF especifico conformara cada parte de la cartera. Se calcula un rendimiento aproximado en los próximos 50 años teniendo en cuenta rendimientos pasados y el factor de una cartera se vuelve mas conservadora a medida que pasan los años. Por último encontramos una calculadora de interés compuesto. Se calculara el monto final luego de una cantidad de años partiendo de una inversión inicial y una tasa de interés.' : 'Investmen Portfolio Calculator is a page where the user can calculate an investment portfolio based on his age and investor profile. You can choose which specific ETF will make up each part of the portfolio. It calculates an approximate return over the next 50 years taking into account past returns and the factor of a portfolio becoming more conservative over time. Finally, there is a compound interest calculator. It will calculate the final amount after a number of years based on an initial investment and an interest rate.'}</h3>
                                 </Grid>
                                 <Grid item container justifyContent="flex-end">
                                     <button>
