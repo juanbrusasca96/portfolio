@@ -10,14 +10,17 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import { LanguageProvider } from './helpers/LanguageContext';
 import { NavbarFixedProvider } from './helpers/NavbarFixedContext';
+import { Grid } from '@mui/material';
 
 function App() {
   return (
     <LanguageProvider>
       <NavbarFixedProvider>
         <div className="App">
-          <AboutMe />
-          <Navbar />
+          <Grid className='background'>
+            <AboutMe />
+            <Navbar />
+          </Grid>
           <Skills />
           <Projects />
           <Contact />

@@ -9,8 +9,13 @@
 .App {
     min-height: 300vh;
     overflow-x: hidden;
-    background: url(/src/images/background.png) center top/cover no-repeat;
-    font-family: 'Fira Code', monospace;
+    background-color: rgb(54, 55, 73);
+    .background {
+        background: url(/src/images/background1.png) center center/cover no-repeat;
+    }
+
+    font-family: 'Fira Code',
+    monospace;
 }
 
 html {

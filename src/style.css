@@ -425,14 +425,16 @@
     .aboutMe .switch input:checked:focus + .switch-left + .switch-right {
       color: #333; }
 
-.skills .icon {
-  color: white;
-  padding-top: 60%; }
-  .skills .icon svg {
-    width: 7.321vw;
-    height: 7.321vw; }
-  .skills .icon:hover {
-    color: #e55554; }
+.skills {
+  background: url(/src/images/backgroundArcade1.png) center/cover no-repeat; }
+  .skills .icon {
+    color: white;
+    padding-top: 60%; }
+    .skills .icon svg {
+      width: 7.321vw;
+      height: 7.321vw; }
+    .skills .icon:hover {
+      color: #e55554; }
 
 .projects a {
   text-decoration: none;
@@ -525,32 +527,32 @@
 .projects .cardProject button:hover svg {
   transform: scale(1.2); }
 
-.contact .contactTitle {
-  width: 50%; }
-
-.contact .form form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.464vw; }
-  .contact .form form .button {
-    background-color: #e55554; }
-
-.contact label {
-  color: white;
-  font-family: 'Fira Code', monospace !important;
-  font-weight: bold; }
-
-.contact .input {
-  width: 50%;
-  border: none; }
-  .contact .input input,
-  .contact .input textarea {
+.contact {
+  background: url(/src/images/backgroundContact.png) center center/cover no-repeat;
+  padding-right: 35%; }
+  .contact .contactTitle {
+    width: 70%; }
+  .contact .form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.464vw; }
+    .contact .form form .button {
+      background-color: #e55554; }
+  .contact label {
     color: white;
-    font-family: 'Fira Code', monospace !important; }
-  .contact .input:hover {
-    color: white; }
+    font-family: 'Fira Code', monospace !important;
+    font-weight: bold; }
+  .contact .input {
+    width: 70%;
+    border: none; }
+    .contact .input input,
+    .contact .input textarea {
+      color: white;
+      font-family: 'Fira Code', monospace !important; }
+    .contact .input:hover {
+      color: white; }
 
 .footer {
   background-color: #333333;
@@ -575,8 +577,10 @@
 .App {
   min-height: 300vh;
   overflow-x: hidden;
-  background: url(/src/images/background.png) center top/cover no-repeat;
-  font-family: 'Fira Code', monospace; }
+  background-color: #363749;
+  font-family: 'Fira Code', monospace; }
+  .App .background {
+    background: url(/src/images/background1.png) center center/cover no-repeat; }
 
 html {
   font-family: 'Fira Code', monospace;

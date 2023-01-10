@@ -1,8 +1,10 @@
 .contact {
     // background-color: rgb(43, 43, 43);
+    background: url(/src/images/backgroundContact.png) center center/cover no-repeat;
+    padding-right: 35%;
 
     .contactTitle {
-        width: 50%;
+        width: 70%;
     }
 
     .form {
@@ -27,7 +29,7 @@
     }
 
     .input {
-        width: 50%;
+        width: 70%;
         border: none;
 
         input,
