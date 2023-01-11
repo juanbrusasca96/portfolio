@@ -1,5 +1,6 @@
-import { Grid, SvgIcon } from '@mui/material'
+import { Avatar, Grid, SvgIcon } from '@mui/material'
 import React from 'react'
+import logo from '../../images/logoWithoutBackground.png'
 
 export default function Footer() {
     return (
@@ -21,7 +22,11 @@ export default function Footer() {
                 </a>
             </Grid>
             <hr />
-            <p>© 2022 - Developed by Juan Brusasca</p>
+            <Grid item container justifyContent="center" alignItems="center" xs={2}>            
+            <p>© 2023 - Developed by Juan Brusasca</p>
+            <Avatar src={logo} variant="square" sx={{ width: '4.124vw', height: '4.124vw', display:'flex', justifyContent:'center', alignItems:'center', marginLeft:'2%' }}></Avatar>
+            </Grid>
+
         </Grid>
     )
 }
