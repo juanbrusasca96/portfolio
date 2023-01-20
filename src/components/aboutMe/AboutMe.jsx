@@ -34,7 +34,7 @@ export default function AboutMe() {
                     <h1 key={index} contentCss={content[index]}>{content[index]}</h1>
                 </div>
             </div>
-            <Grid item container xs={12} mt={`1%`}>
+            <Grid item container xs={12} mt={`1%`} className='cardAndContainer'>
                 <Grid item container justifyContent="center" alignItems="center" xs={2}>
                     {/* <Avatar src={avatar} sx={{ width: 64, height: 64 }} className='name' />
                     <Typography className='name'>
@@ -72,7 +72,7 @@ export default function AboutMe() {
                         </AnimationOnScroll>
                     </AnimationOnScroll>
                 </Grid>
-                <Grid item container direction="column" justifyContent="center" alignItems="center" xs={10}>
+                <Grid item container direction="column" justifyContent="center" alignItems="center" xs={10} className='containerFather'>
                     <Grid item>
                         <AnimationOnScroll offset={0} animateOnce={true} animateIn="animate__fadeInLeftBig">
                             {/* <Typography className='text'>

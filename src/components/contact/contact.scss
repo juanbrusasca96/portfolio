@@ -44,3 +44,22 @@
         }
     }
 }
+
+@media screen and (max-width:700px) {
+    .contact {
+    
+        .form {
+            form {
+                gap: 1.464vh;
+    
+                .button {
+                    font-size: 1.098vh;
+                }
+            }
+        }
+    
+        label {
+            font-size: 1.171vh;
+        }
+    }
+}

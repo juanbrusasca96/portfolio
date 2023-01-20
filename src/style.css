@@ -25,6 +25,15 @@
       height: 0.512vw;
       background-color: #e55554; }
 
+@media screen and (max-width: 700px) {
+  .navbarAnimation .navbar a,
+  .navbarAnimation .navbar p {
+    font-size: 1.464vh; }
+  .navbarAnimation .navbar .progressMainWrapper {
+    height: 0.512vh; }
+  .navbarAnimation .navbar .progressMainStyle {
+    height: 0.512vh; } }
+
 .aboutMe {
   padding-top: 0.5%;
   /* From uiverse.io by @mrhyddenn */ }
@@ -44,31 +53,6 @@
   .aboutMe .myName {
     color: #e55554;
     font-weight: 800; }
-  .aboutMe .scroll .container_mouse {
-    padding-top: 15%; }
-  .aboutMe .scroll .mouse-btn {
-    margin: 10% auto;
-    width: 20px;
-    height: 40px;
-    border: 3px solid rgba(122, 122, 124, 0.918);
-    border-radius: 20px;
-    display: flex; }
-  .aboutMe .scroll .mouse-scroll {
-    display: block;
-    width: 10px;
-    height: 10px;
-    background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), #7b7c7c);
-    border-radius: 50%;
-    margin: auto;
-    animation: scrolling13 1s linear infinite; }
-
-@keyframes scrolling13 {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px); }
-  100% {
-    opacity: 1;
-    transform: translateY(10px); } }
   .aboutMe .download {
     margin: 1%;
     width: 30%; }
@@ -425,8 +409,159 @@
     .aboutMe .switch input:checked:focus + .switch-left + .switch-right {
       color: #333; }
 
+@media screen and (max-width: 700px) {
+  .aboutMe {
+    /* From uiverse.io by @mrhyddenn */ }
+    .aboutMe .cardAndContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10%; }
+    .aboutMe .name {
+      font-size: 1.830vh;
+      width: 6.149vh;
+      height: 6.149vh; }
+    .aboutMe .text {
+      font-size: 1.430vh; }
+    .aboutMe .download button,
+    .aboutMe .download button::after {
+      margin-bottom: 10%;
+      padding: 0.732vh 1.464vh;
+      font-size: 1.318vh;
+      letter-spacing: 0.220vh;
+      box-shadow: 0.439vh 0px 0px #07182E; }
+    .aboutMe .download button::after {
+      --slice-0: inset(50% 50% 50% 50%);
+      --slice-1: inset(80% -0.439vh 0 0);
+      --slice-2: inset(50% -0.439vh 30% 0);
+      --slice-3: inset(10% -0.439vh 85% 0);
+      --slice-4: inset(40% -0.439vh 43% 0);
+      --slice-5: inset(80% -0.439vh 5% 0);
+      text-shadow: -0.22vh -0.22vh 0px #ffa600, 0.22vh 0.22vh 0px #07182E; }
+  @keyframes glitch {
+    0% {
+      transform: translate(-1.464vh, -0.732vh); }
+    10% {
+      transform: translate(0.732vh, 0.732vh); }
+    20% {
+      transform: translate(-0.732vh, 0.732vh); }
+    30% {
+      transform: translate(0px, 0.366vh); }
+    40% {
+      transform: translate(-0.366vh, 0px); }
+    50% {
+      transform: translate(0.366vh, 0px); }
+    60% {
+      transform: translate(0.366vh, 0.732vh); }
+    70% {
+      transform: translate(-0.732vh, 0.732vh); }
+    80% {
+      transform: translate(1.464vh, -0.732vh); }
+    90% {
+      transform: translate(-0.732vh, 0px); }
+    100% {
+      transform: translate(0); } }
+    .aboutMe .scanner h1 {
+      font-size: 1.640vh; }
+    .aboutMe .scanner h1::before {
+      border-right: 0.293vh solid white; }
+    .aboutMe .card {
+      width: 14.641vh;
+      height: 17.302vh;
+      border-radius: 0.366vh; }
+      .aboutMe .card .img {
+        margin: 2.196vh auto 0.732vh auto;
+        width: 5.490vh;
+        height: 5.490vh;
+        border: 0.073vh solid #f0f0f0;
+        font-size: 0.805vh; }
+      .aboutMe .card h1 {
+        padding: 0.366vh;
+        font-size: 1.318vh; }
+      .aboutMe .card h5 {
+        font-size: 0.952vh; }
+      .aboutMe .card svg {
+        padding: 0 0.366vh; }
+    .aboutMe .card:hover .img {
+      border: 0.073vh solid #f0f0f0; }
+    .aboutMe .containerFather {
+      max-width: 95%; }
+    .aboutMe .container {
+      margin: 3% 0 3% 0;
+      font-size: 1.480vh; }
+      .aboutMe .container .terminal_toolbar {
+        height: 2.196vh;
+        padding: 0 0.586vh;
+        border-top-left-radius: 0.366vh;
+        border-top-right-radius: 0.366vh; }
+      .aboutMe .container .btn {
+        margin-right: 0.366vh;
+        height: 0.878vh;
+        width: 0.878vh;
+        text-shadow: 0px 0.073vh 0px rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 0px 0.073vh 0px #41403A, 0px 0.073vh 0.073vh 0px #474642; }
+      .aboutMe .container .user {
+        margin-left: 0.439vh;
+        font-size: 1.025vh;
+        line-height: 1.098vh; }
+      .aboutMe .container .terminal_body {
+        height: calc(100% - 2.196vh);
+        padding-top: 0.146vh;
+        margin-top: -0.073vh;
+        border-bottom-left-radius: 0.366vh;
+        border-bottom-right-radius: 0.366vh; }
+      .aboutMe .container .terminal_promt span {
+        margin-left: 0.293vh; }
+      .aboutMe .container .terminal_cursor {
+        height: 1.430vh;
+        width: 0.732vh;
+        margin-left: 0.732vh; }
+    .aboutMe .switch .rocker {
+      font-size: 2.343vh;
+      width: 8.199vh;
+      height: 4.100vh;
+      border-bottom: 0.586vh solid #eee; }
+    .aboutMe .switch .rocker-small {
+      font-size: 0.937vh; }
+    .aboutMe .switch .rocker::before {
+      top: 0.586vh;
+      border: 0.586vh solid #eee; }
+    .aboutMe .switch .switch-left,
+    .aboutMe .switch .switch-right {
+      height: 2.928vh;
+      width: 3.514vh; }
+    .aboutMe .switch .switch-left {
+      height: 2.811vh;
+      width: 3.221vh;
+      left: 0.996vh;
+      bottom: 0.469vh; }
+    .aboutMe .switch .switch-right {
+      right: 0.586vh; }
+    .aboutMe .switch .switch-left::before,
+    .aboutMe .switch .switch-right::before {
+      width: 0.469vh;
+      height: 2.870vh;
+      bottom: -0.527vh; }
+    .aboutMe .switch .switch-left::before {
+      left: -0.469vh; }
+    .aboutMe .switch .switch-right::before {
+      right: -0.439vh; }
+    .aboutMe .switch input:checked + .switch-left {
+      left: 0.586vh;
+      height: 2.928vh;
+      width: 3.514vh; }
+    .aboutMe .switch input:checked + .switch-left::before {
+      width: 3.611vh; }
+    .aboutMe .switch input:checked + .switch-left + .switch-right {
+      bottom: 0.469vh;
+      right: 0.937vh;
+      height: 2.811vh;
+      width: 3.221vh; } }
+
 .skills {
   background: url(/src/images/backgroundArcade1.png) center/cover no-repeat; }
+  .skills h1 {
+    font-size: 1.757vw; }
   .skills .icon {
     color: white;
     padding-top: 60%; }
@@ -435,6 +570,16 @@
       height: 7.321vw; }
     .skills .icon:hover {
       color: #e55554; }
+
+@media screen and (max-width: 700px) {
+  .skills h1 {
+    font-size: 1.757vh; }
+  .skills .icon svg {
+    width: 7.321vh;
+    height: 7.321vh; } }
+
+.projects h1 {
+  font-size: 1.757vw; }
 
 .projects a {
   text-decoration: none;
@@ -526,6 +671,40 @@
 .projects .cardProject button:hover svg {
   transform: scale(1.2); }
 
+@media screen and (max-width: 700px) {
+  .projects h1 {
+    font-size: 1.757vh; }
+  .projects .cardProject .description {
+    font-size: 1.318vh; }
+  .projects .cardProject .card {
+    width: 18.302vh;
+    height: 18.302vh; }
+    .projects .cardProject .card .content {
+      border-radius: 1.098vh; }
+    .projects .cardProject .card .front svg {
+      font-size: 4.392vh; }
+    .projects .cardProject .card .front,
+    .projects .cardProject .card .back {
+      border-radius: 1.098vh;
+      font-size: 1.830vh; }
+    .projects .cardProject .card .back svg {
+      font-size: 2.196vh; }
+  .projects .cardProject button {
+    font-size: 1.098vh;
+    padding: 0.293vh;
+    border-radius: 1.464vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1.464vh 1.83vh -0.366vh, rgba(0, 0, 0, 0.04) 0px 0.732vh 0.732vh -0.366vh; }
+  .projects .cardProject button .button-content {
+    padding: 0.586vh 1.025vh;
+    padding-left: 0.732vh;
+    border-radius: 1.171vh; }
+  .projects .cardProject button svg {
+    width: 1.611vh;
+    height: 1.611vh;
+    margin-right: 0.439vh; }
+  .projects .cardProject button:hover svg {
+    transform: scale(1.2); } }
+
 .contact {
   background: url(/src/images/backgroundContact.png) center center/cover no-repeat;
   padding-right: 35%; }
@@ -555,6 +734,14 @@
     .contact .input:hover {
       color: white; }
 
+@media screen and (max-width: 700px) {
+  .contact .form form {
+    gap: 1.464vh; }
+    .contact .form form .button {
+      font-size: 1.098vh; }
+  .contact label {
+    font-size: 1.171vh; } }
+
 .footer {
   background-color: #333333;
   padding: 4%;
@@ -573,7 +760,24 @@
     width: 70%;
     border: 0.073vw solid #484848; }
   .footer p {
+    font-size: 1.171vw;
     color: #616161; }
+
+@media screen and (max-width: 700px) {
+  .footer {
+    gap: 2.196vh; }
+    .footer .social {
+      gap: 3.660vh; }
+      .footer .social svg {
+        font-size: 3.660vh; }
+        .footer .social svg:hover {
+          transform: translateY(-0.366vh); }
+    .footer .backToTop svg {
+      font-size: 2.562vh; }
+    .footer hr {
+      border: 0.073vh solid #484848; }
+    .footer p {
+      font-size: 1.171vh; } }
 
 .App {
   overflow-x: hidden;

@@ -42,3 +42,24 @@
         // }
     }
 }
+
+@media screen and (max-width:700px) {
+    .navbarAnimation {
+    
+        .navbar {
+    
+            a,
+            p {
+                font-size: 1.464vh;
+            } 
+    
+            .progressMainWrapper {
+                height: 0.512vh;
+            }
+    
+            .progressMainStyle {
+                height: 0.512vh;
+            }
+        }
+    }
+}

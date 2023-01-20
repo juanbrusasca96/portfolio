@@ -29,6 +29,39 @@
     }
 
     p {
+        font-size: 1.171vw;
         color: rgb(97, 97, 97);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .footer {
+        gap: 2.196vh;
+    
+        .social {
+            gap: 3.660vh;
+    
+            svg {
+                font-size: 3.660vh;
+    
+                &:hover {
+                    transform: translateY(-0.366vh);
+                }
+            }
+        }
+    
+        .backToTop {
+            svg {
+                font-size: 2.562vh;
+            }
+        }
+    
+        hr {
+            border: 0.073vh solid rgb(72, 72, 72);
+        }
+    
+        p {
+            font-size: 1.171vh;
+        }
     }
 }

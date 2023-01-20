@@ -25,42 +25,42 @@
         font-weight: 800;
     }
 
-    .scroll {
-        .container_mouse {
-            padding-top: 15%;
-        }
+    // .scroll {
+    //     .container_mouse {
+    //         padding-top: 15%;
+    //     }
 
-        .mouse-btn {
-            margin: 10% auto;
-            width: 20px;
-            height: 40px;
-            border: 3px solid rgba(122, 122, 124, 0.918);
-            border-radius: 20px;
-            display: flex;
-        }
+    //     // .mouse-btn {
+    //     //     margin: 10% auto;
+    //     //     width: 20px;
+    //     //     height: 40px;
+    //     //     border: 3px solid rgba(122, 122, 124, 0.918);
+    //     //     border-radius: 20px;
+    //     //     display: flex;
+    //     // }
 
-        .mouse-scroll {
-            display: block;
-            width: 10px;
-            height: 10px;
-            background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
-            border-radius: 50%;
-            margin: auto;
-            animation: scrolling13 1s linear infinite;
-        }
+    //     // .mouse-scroll {
+    //     //     display: block;
+    //     //     width: 10px;
+    //     //     height: 10px;
+    //     //     background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
+    //     //     border-radius: 50%;
+    //     //     margin: auto;
+    //     //     animation: scrolling13 1s linear infinite;
+    //     // }
 
-        @keyframes scrolling13 {
-            0% {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
+    //     @keyframes scrolling13 {
+    //         0% {
+    //             opacity: 0;
+    //             transform: translateY(-10px);
+    //         }
 
-            100% {
-                opacity: 1;
-                transform: translateY(10px);
-            }
-        }
-    }
+    //         100% {
+    //             opacity: 1;
+    //             transform: translateY(10px);
+    //         }
+    //     }
+    // }
 
     .download {
         margin: 1%;
@@ -568,4 +568,250 @@
         }
     }
 
+}
+
+@media screen and (max-width:700px) {
+    .aboutMe {
+        .cardAndContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10%;
+        }
+        .name {
+            font-size: 1.830vh;
+            width: 6.149vh;
+            height: 6.149vh;
+        }
+    
+        .text {
+            font-size: 1.430vh;
+        }
+    
+        .download {
+            button,
+            button::after {
+                margin-bottom: 10%;
+                padding: 0.732vh 1.464vh;
+                font-size: 1.318vh;
+                letter-spacing: 0.220vh;
+                box-shadow: 0.439vh 0px 0px $blueBackground;
+            }
+    
+            button::after {
+                --slice-0: inset(50% 50% 50% 50%);
+                --slice-1: inset(80% -0.439vh 0 0);
+                --slice-2: inset(50% -0.439vh 30% 0);
+                --slice-3: inset(10% -0.439vh 85% 0);
+                --slice-4: inset(40% -0.439vh 43% 0);
+                --slice-5: inset(80% -0.439vh 5% 0);
+                text-shadow: -0.220vh -0.220vh 0px $yellow, 0.220vh 0.220vh 0px $blueBackground;
+            }
+    
+            @keyframes glitch {
+                0% {
+                    transform: translate(-1.464vh, -0.732vh);
+                }
+    
+                10% {
+                    transform: translate(0.732vh, 0.732vh);
+                }
+    
+                20% {
+                    transform: translate(-0.732vh, 0.732vh);
+                }
+    
+                30% {
+                    transform: translate(0px, 0.366vh);
+                }
+    
+                40% {
+                    transform: translate(-0.366vh, 0px);
+                }
+    
+                50% {
+                    transform: translate(0.366vh, 0px);
+                }
+    
+                60% {
+                    transform: translate(0.366vh, 0.732vh);
+                }
+    
+                70% {
+                    transform: translate(-0.732vh, 0.732vh);
+                }
+    
+                80% {
+                    transform: translate(1.464vh, -0.732vh);
+                }
+    
+                90% {
+                    transform: translate(-0.732vh, 0px);
+                }
+    
+                100% {
+                    transform: translate(0);
+                }
+            }
+        }
+    
+        .scanner h1 {
+            font-size: 1.640vh;
+        }
+    
+        .scanner h1::before {
+            border-right: 0.293vh solid white;
+        }
+    
+        .card {
+            width: 14.641vh;
+            height: 17.302vh;
+            border-radius: 0.366vh;
+    
+            .img {
+                margin: 2.196vh auto 0.732vh auto;
+                width: 5.490vh;
+                height: 5.490vh;
+                border: 0.073vh solid #f0f0f0;
+                font-size: 0.805vh;
+            }
+    
+            h1 {
+                padding: 0.366vh;
+                font-size: 1.318vh;
+            }
+    
+            h5 {
+                font-size: 0.952vh;
+            }
+    
+            svg {
+                padding: 0 0.366vh;
+            }
+    
+    
+        }
+    
+        .card:hover .img {
+            border: 0.073vh solid #f0f0f0;
+        }
+
+        .containerFather{
+            max-width: 95%;
+        }
+    
+        /* From uiverse.io by @mrhyddenn */
+        .container {
+            margin: 3% 0 3% 0;
+            font-size: 1.480vh;
+    
+            .terminal_toolbar {
+                height: 2.196vh;
+                padding: 0 0.586vh;
+                border-top-left-radius: 0.366vh;
+                border-top-right-radius: 0.366vh;
+            }
+    
+            .btn {
+                margin-right: 0.366vh;
+                height: 0.878vh;
+                width: 0.878vh;
+                text-shadow: 0px 0.073vh 0px rgba(255, 255, 255, 0.2);
+                box-shadow: 0px 0px 0.073vh 0px #41403A, 0px 0.073vh 0.073vh 0px #474642;
+            }
+    
+            .user {
+                margin-left: 0.439vh;
+                font-size: 1.025vh;
+                line-height: 1.098vh;
+            }
+    
+            .terminal_body {
+                height: calc(100% - 2.196vh);
+                padding-top: 0.146vh;
+                margin-top: -0.073vh;
+                border-bottom-left-radius: 0.366vh;
+                border-bottom-right-radius: 0.366vh;
+            }
+    
+            .terminal_promt span {
+                margin-left: 0.293vh;
+            }
+    
+            .terminal_cursor {
+                height: 1.430vh;
+                width: 0.732vh;
+                margin-left: 0.732vh;
+            }
+        }
+    
+        .switch {
+    
+            .rocker {
+                font-size: 2.343vh;
+                width: 8.199vh;
+                height: 4.100vh;
+                border-bottom: 0.586vh solid #eee;
+            }
+    
+            .rocker-small {
+                font-size: 0.937vh;
+            }
+    
+            .rocker::before {
+                top: 0.586vh;
+                border: 0.586vh solid #eee;
+            }
+    
+            .switch-left,
+            .switch-right {
+                height: 2.928vh;
+                width: 3.514vh;
+            }
+    
+            .switch-left {
+                height: 2.811vh;
+                width: 3.221vh;
+                left: 0.996vh;
+                bottom: 0.469vh;
+            }
+    
+            .switch-right {
+                right: 0.586vh;
+            }
+    
+            .switch-left::before,
+            .switch-right::before {
+                width: 0.469vh;
+                height: 2.870vh;
+                bottom: -0.527vh;
+            }
+    
+            .switch-left::before {
+                left: -0.469vh;
+            }
+    
+            .switch-right::before {
+                right: -0.439vh;
+            }
+    
+            input:checked+.switch-left {
+                left: 0.586vh;
+                height: 2.928vh;
+                width: 3.514vh;
+            }
+    
+            input:checked+.switch-left::before {
+                width: 3.611vh;
+            }
+    
+            input:checked+.switch-left+.switch-right {
+                bottom: 0.469vh;
+                right: 0.937vh;
+                height: 2.811vh;
+                width: 3.221vh;
+            }
+        }
+    
+    }
 }
