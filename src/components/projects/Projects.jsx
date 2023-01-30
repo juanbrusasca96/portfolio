@@ -15,10 +15,10 @@ export default function Projects() {
                 {/* <Grid item className='gif' xs={5}>
                     <img src="https://media4.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif?cid=ecf05e476x6754wdy29k3ubzcjwozgahalpevbcvml02a7xv&rid=giphy.gif&ct=g" width="480" height="270" ></img >
                 </Grid> */}
-                <Grid item xs={12}>
+                <Grid item xs={12} className='cardProjectContainer'>
                     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRightBig">
                         <Grid item container direction="row" justifyContent="flex-start" alignItems="center" className='cardProject'>
-                            <Grid item className="card" xs={3}>
+                            <Grid item className="card">
                                 <div className="content">
                                     <div style={{ backgroundColor: "rgb(31, 83, 107)", color: "rgb(221, 207, 129)" }} className="front">
                                         <SvgIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -43,11 +43,11 @@ export default function Projects() {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item p={`2%`} xs={5}>
+                            <Grid item p={`2%`} xs={9} className='cardDescription'>
                                 <Grid item>
                                     <h3 className='description'>{spanish ? 'League of legends Store es un proyecto personal, un e-commerce realizado a base de React en dónde se simula la compra de campeones (personajes dentro del juego) del conocido videojuego League of legends.' : 'League of legends Store is a personal project, an e-commerce based on React where the purchase of champions (in-game characters) of the popular video game League of legends is simulated.'}</h3>
                                 </Grid>
-                                <Grid item container>
+                                <Grid item container direction="row" justifyContent="flex-start" className='cardButtons'>
                                     <button>
                                         <a href="https://github.com/juanbrusasca96/leagueOfLegendsStore" target="_blank">
                                             <span className="button-content">
@@ -67,12 +67,12 @@ export default function Projects() {
                         </Grid>
                     </AnimationOnScroll>
                     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
-                        <Grid item container direction="row" justifyContent="flex-end" alignItems="center" className='cardProject'>
-                            <Grid item p={`2%`} xs={8}>
+                        <Grid item container direction="row" justifyContent="flex-end" alignItems="center" className='cardProject cardProjectReverse'>
+                            <Grid item p={`2%`} xs={9} className='cardDescription'>
                                 <Grid item>
                                     <h3 style={{ textAlign: "end" }} className='description'>{spanish ? 'Social Sound fue un proyecto que nació con el objetivo de conectar a músicos independientes con el publico. Se basa en compartir archivos audiovisuales con el fin de promocionar su música y, a su vez, interactuar con el contenido de otros artistas. También esta dedicada a usuarios que simplemente busquen explorar nuevos talentos musicales.' : 'Social Sound was a project that was born with the idea of ​​connecting independent musicians with the public. It is based on sharing audiovisual files in order to promote their music and, in turn, interact with the content of other artists. It is also dedicated to users who are simply looking to explore new musical talents.'}</h3>
                                 </Grid>
-                                <Grid item container justifyContent="flex-end">
+                                <Grid item container justifyContent="flex-end" className='cardButtons'>
                                     <button>
                                         <a href="https://github.com/agustinagomez/FinalProject" target="_blank">
                                             <span className="button-content">
@@ -89,7 +89,7 @@ export default function Projects() {
                                     </button>
                                 </Grid>
                             </Grid>
-                            <Grid item className="card" xs={3}>
+                            <Grid item className="card">
                                 <div className="content">
                                     <div style={{ backgroundColor: "#00FFD6", color: "#000A1F" }} className="front">
                                         <SvgIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -98,7 +98,7 @@ export default function Projects() {
                                         <SvgIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                             <path d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
                                         </SvgIcon>
-                                        <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: "2.830vw" }} className="title">Social Sound</h3>
+                                        <h3 style={{ fontFamily: "'Inter', sans-serif" }} className="title">Social Sound</h3>
                                         {/* <iframe src="leagueoflegendsstore.netlify.app/" frameborder="0"></iframe> */}
                                         {/* <p className="subtitle">Hover me :)</p> */}
                                     </div>
@@ -119,7 +119,7 @@ export default function Projects() {
                     </AnimationOnScroll>
                     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRightBig">
                         <Grid item container direction="row" justifyContent="flex-start" alignItems="center" className='cardProject'>
-                            <Grid item className="card" xs={3}>
+                            <Grid item className="card">
                                 <div className="content">
                                     <div style={{ backgroundColor: "rgb(56, 150, 188)", color: "#FBCA1F" }} className="front">
                                         <SvgIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -128,7 +128,7 @@ export default function Projects() {
                                         <SvgIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                             <path d="M226.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5s.3-86.2 32.6-96.8s70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3S-2.7 179.3 21.8 165.3s59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5v1.6c0 25.8-20.9 46.7-46.7 46.7c-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2C84.9 480 64 459.1 64 433.3v-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3s29.1 51.7 10.2 84.1s-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5s46.9 53.9 32.6 96.8s-52.1 69.1-84.4 58.5z" />
                                         </SvgIcon>
-                                        <h3 style={{ fontFamily: "'Roboto', sans-serif", fontSize: "2.830vw" }} className="title">PI Dogs</h3>
+                                        <h3 style={{ fontFamily: "'Roboto', sans-serif" }} className="title">PI Dogs</h3>
                                         {/* <iframe src="leagueoflegendsstore.netlify.app/" frameborder="0"></iframe> */}
                                         {/* <p className="subtitle">Hover me :)</p> */}
                                     </div>
@@ -145,7 +145,7 @@ export default function Projects() {
                                     </div>
                                 </div>
                             </Grid>
-                            <Grid item p={`2%`} xs={9}>
+                            <Grid item p={`2%`} xs={9} className='cardDescription'>
                                 <Grid item>
                                     <h3 className='description'>{spanish ? 'PI Dogs es una aplicación en la cual se puedan ver distintas razas de perro junto con información relevante de las mismas utilizando una api externa y una base de datos propia y a partir de ella poder, entre otras cosas:' : 'PI Dogs is an application in which you can see different dog breeds along with relevant information about them using an external api and its own database and from it you can, among other things:'}
                                         <br />
@@ -155,7 +155,7 @@ export default function Projects() {
                                         <br />
                                         • {spanish ? 'Agregar nuevos perros a una base de datos propia' : 'Adding new dogs to a database'}</h3>
                                 </Grid>
-                                <Grid item container>
+                                <Grid item container className='cardButtons'>
                                     <button>
                                         <a href="https://github.com/juanbrusasca96/PI-Dogs" target="_blank">
                                             <span className="button-content">
@@ -174,12 +174,12 @@ export default function Projects() {
                         </Grid>
                     </AnimationOnScroll>
                     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
-                        <Grid item container direction="row" justifyContent="flex-end" alignItems="center" className='cardProject'>
-                            <Grid item p={`2%`} xs={9}>
+                        <Grid item container direction="row" justifyContent="flex-end" alignItems="center" className='cardProject cardProjectReverse'>
+                            <Grid item p={`2%`} xs={9} className='cardDescription'>
                                 <Grid item>
                                     <h3 style={{ textAlign: "end" }} className='description'>{spanish ? 'Investmen Portfolio Calculator es una página donde el usuario puede calcular una cartera de inversión a partir de su edad y su perfi del inversor. Puede elegir que ETF especifico conformara cada parte de la cartera. Se calcula un rendimiento aproximado en los próximos 50 años teniendo en cuenta rendimientos pasados y el factor de una cartera se vuelve mas conservadora a medida que pasan los años. Por último encontramos una calculadora de interés compuesto. Se calculara el monto final luego de una cantidad de años partiendo de una inversión inicial y una tasa de interés.' : 'Investmen Portfolio Calculator is a page where the user can calculate an investment portfolio based on his age and investor profile. You can choose which specific ETF will make up each part of the portfolio. It calculates an approximate return over the next 50 years taking into account past returns and the factor of a portfolio becoming more conservative over time. Finally, there is a compound interest calculator. It will calculate the final amount after a number of years based on an initial investment and an interest rate.'}</h3>
                                 </Grid>
-                                <Grid item container justifyContent="flex-end">
+                                <Grid item container justifyContent="flex-end" className='cardButtons'>
                                     <button>
                                         <a href="https://github.com/juanbrusasca96/investmenPortfolioCalculator" target="_blank">
                                             <span className="button-content">
@@ -196,7 +196,7 @@ export default function Projects() {
                                     </button>
                                 </Grid>
                             </Grid>
-                            <Grid item className="card" xs={3}>
+                            <Grid item className="card">
                                 <div className="content">
                                     <div style={{ backgroundColor: "rgb(69, 125, 88)", color: "rgb(246, 246, 234)" }} className="front">
                                         <SvgIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
