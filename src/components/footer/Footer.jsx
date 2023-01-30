@@ -24,7 +24,7 @@ export default function Footer() {
             <hr />
             <Grid item container justifyContent="center" alignItems="center" xs={2}>            
             <p>© 2023 - Developed by Juan Brusasca</p>
-            <Avatar src={logo} variant="square" sx={{ width: '4.124vw', height: '4.124vw', display:'flex', justifyContent:'center', alignItems:'center', marginLeft:'2%' }}></Avatar>
+            <Avatar src={logo} variant="square" className='logo' ></Avatar>
             </Grid>
 
         </Grid>
