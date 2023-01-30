@@ -5,6 +5,10 @@
 
     .contactTitle {
         width: 70%;
+
+        h1 {
+            font-size: 1.757vw;
+        }
     }
 
     .form {
@@ -47,17 +51,24 @@
 
 @media screen and (max-width:700px) {
     .contact {
-    
+        padding-right: 0;
+
+        .contactTitle {
+            h1 {
+                font-size: 1.757vh;
+            }
+        }
+
         .form {
             form {
                 gap: 1.464vh;
-    
+
                 .button {
                     font-size: 1.098vh;
                 }
             }
         }
-    
+
         label {
             font-size: 1.171vh;
         }
