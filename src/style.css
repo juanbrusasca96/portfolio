@@ -672,44 +672,66 @@
   transform: scale(1.2); }
 
 @media screen and (max-width: 700px) {
+  .projects .cardProjectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; }
   .projects h1 {
     font-size: 1.757vh; }
-  .projects .cardProject .description {
-    font-size: 1.318vh; }
-  .projects .cardProject .card {
-    width: 18.302vh;
-    height: 18.302vh; }
-    .projects .cardProject .card .content {
-      border-radius: 1.098vh; }
-    .projects .cardProject .card .front svg {
-      font-size: 4.392vh; }
-    .projects .cardProject .card .front,
-    .projects .cardProject .card .back {
-      border-radius: 1.098vh;
-      font-size: 1.830vh; }
-    .projects .cardProject .card .back svg {
-      font-size: 2.196vh; }
-  .projects .cardProject button {
-    font-size: 1.098vh;
-    padding: 0.293vh;
-    border-radius: 1.464vh;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1.464vh 1.83vh -0.366vh, rgba(0, 0, 0, 0.04) 0px 0.732vh 0.732vh -0.366vh; }
-  .projects .cardProject button .button-content {
-    padding: 0.586vh 1.025vh;
-    padding-left: 0.732vh;
-    border-radius: 1.171vh; }
-  .projects .cardProject button svg {
-    width: 1.611vh;
-    height: 1.611vh;
-    margin-right: 0.439vh; }
-  .projects .cardProject button:hover svg {
-    transform: scale(1.2); } }
+  .projects .cardProject {
+    display: flex;
+    flex-direction: column; }
+    .projects .cardProject .cardDescription {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%; }
+      .projects .cardProject .cardDescription .description {
+        font-size: 1.318vh;
+        text-align: center !important; }
+      .projects .cardProject .cardDescription .cardButtons {
+        display: flex;
+        justify-content: center !important; }
+    .projects .cardProject .card {
+      width: 18.302vh;
+      height: 18.302vh; }
+      .projects .cardProject .card .content {
+        border-radius: 1.098vh; }
+      .projects .cardProject .card .front svg {
+        font-size: 4.392vh; }
+      .projects .cardProject .card .front,
+      .projects .cardProject .card .back {
+        border-radius: 1.098vh;
+        font-size: 1.830vh; }
+      .projects .cardProject .card .back svg {
+        font-size: 2.196vh; }
+    .projects .cardProject button {
+      font-size: 1.098vh;
+      padding: 0.293vh;
+      border-radius: 1.464vh;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1.464vh 1.83vh -0.366vh, rgba(0, 0, 0, 0.04) 0px 0.732vh 0.732vh -0.366vh; }
+    .projects .cardProject button .button-content {
+      padding: 0.586vh 1.025vh;
+      padding-left: 0.732vh;
+      border-radius: 1.171vh; }
+    .projects .cardProject button svg {
+      width: 1.611vh;
+      height: 1.611vh;
+      margin-right: 0.439vh; }
+    .projects .cardProject button:hover svg {
+      transform: scale(1.2); }
+  .projects .cardProjectReverse {
+    display: flex;
+    flex-direction: column-reverse; } }
 
 .contact {
   background: url(/src/images/backgroundContact.png) center center/cover no-repeat;
   padding-right: 35%; }
   .contact .contactTitle {
     width: 70%; }
+    .contact .contactTitle h1 {
+      font-size: 1.757vw; }
   .contact .form form {
     width: 100%;
     display: flex;
@@ -735,12 +757,16 @@
       color: white; }
 
 @media screen and (max-width: 700px) {
-  .contact .form form {
-    gap: 1.464vh; }
-    .contact .form form .button {
-      font-size: 1.098vh; }
-  .contact label {
-    font-size: 1.171vh; } }
+  .contact {
+    padding-right: 0; }
+    .contact .contactTitle h1 {
+      font-size: 1.757vh; }
+    .contact .form form {
+      gap: 1.464vh; }
+      .contact .form form .button {
+        font-size: 1.098vh; }
+    .contact label {
+      font-size: 1.171vh; } }
 
 .footer {
   background-color: #333333;
@@ -762,6 +788,13 @@
   .footer p {
     font-size: 1.171vw;
     color: #616161; }
+  .footer .logo {
+    width: 4.124vw;
+    height: 4.124vw;
+    display: flex;
+    justify-content: 'center';
+    align-items: 'center';
+    margin-left: 2%; }
 
 @media screen and (max-width: 700px) {
   .footer {
@@ -777,7 +810,10 @@
     .footer hr {
       border: 0.073vh solid #484848; }
     .footer p {
-      font-size: 1.171vh; } }
+      font-size: 1.371vh; }
+    .footer .logo {
+      width: 4vh;
+      height: 4vh; } }
 
 .App {
   overflow-x: hidden;
