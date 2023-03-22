@@ -7,7 +7,7 @@
         width: 70%;
 
         h1 {
-            font-size: 1.757vw;
+            font-size: 24px;
         }
     }
 
@@ -21,7 +21,7 @@
 
             .button {
                 background-color: $redButton;
-                font-size: 1.098vw;
+                font-size: 15px;
             }
         }
     }
@@ -30,7 +30,7 @@
         color: white;
         font-family: 'Fira Code', monospace !important;
         font-weight: bold;
-        font-size: 1.171vw;
+        font-size: 16px;
     }
 
     .input {
@@ -45,6 +45,28 @@
 
         &:hover {
             color: white;
+        }
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .contact {
+        .contactTitle {
+            h1 {
+                font-size: 1.757vw;
+            }
+        }
+
+        .form {
+            form {
+                .button {
+                    font-size: 1.098vw;
+                }
+            }
+        }
+
+        label {
+            font-size: 1.171vw;
         }
     }
 }

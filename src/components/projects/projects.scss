@@ -1,7 +1,7 @@
 .projects {
 
     h1 {
-        font-size: 1.757vw;
+        font-size: 24px;
     }
 
     a {
@@ -11,7 +11,7 @@
 
     .cardProject {
         .description {
-            font-size: 1.318vw;
+            font-size: 18px;
         }
 
         .card {
@@ -39,7 +39,7 @@
 
             .front {
                 svg {
-                    font-size: 4.392vw;
+                    font-size: 60px;
                     transform: translateZ(5rem);
                     padding: 4%;
                 }
@@ -58,7 +58,7 @@
                 padding: 3%;
                 transform-style: preserve-3d;
                 backface-visibility: hidden;
-                font-size: 1.830vw;
+                font-size: 25px;
             }
 
             .title {
@@ -85,7 +85,7 @@
                 padding: 1%;
 
                 svg {
-                    font-size: 2.196vw;
+                    font-size: 30px;
                     transform: translateZ(5rem);
                     // padding: 3%;
                 }
@@ -102,7 +102,7 @@
             justify-content: center;
             margin: 1%;
             // margin-top: 4%;
-            font-size: 1.098vw;
+            font-size: 15px;
             font-family: inherit;
             font-weight: 700;
             padding: 0.293vw;
@@ -134,6 +134,45 @@
             transform: scale(1.2);
         }
     }
+}
+
+@media screen and (max-width:1366px) {
+    .projects {
+
+        h1 {
+            font-size: 1.757vw;
+        }
+    
+        .cardProject {
+            .description {
+                font-size: 1.318vw;
+            }
+    
+            .card {
+    
+                .front {
+                    svg {
+                        font-size: 4.392vw;
+                    }
+                }
+                .front,
+                .back {
+                    font-size: 1.830vw;
+                }
+    
+                .back {
+                    svg {
+                        font-size: 2.196vw;
+                    }
+                }
+            }
+    
+            button {
+                font-size: 1.098vw;
+            }
+        }
+    }
+    
 }
 
 @media screen and (max-width:700px) {

@@ -6,7 +6,7 @@
     }
 
     .name {
-        font-size: 1.830vw;
+        font-size: 25px;
         font-weight: 500;
         margin: 1%;
         margin-top: 3%;
@@ -15,7 +15,7 @@
     }
 
     .text {
-        font-size: 1.430vw;
+        font-size: 20px;
         margin: 1% 5% 0 5%;
         text-align: center;
     }
@@ -23,6 +23,10 @@
     .myName {
         color: $redButton;
         font-weight: 800;
+    }
+
+    .cardAndContainer{
+        width: 100%;
     }
 
     // .scroll {
@@ -74,7 +78,7 @@
         button,
         button::after {
             padding: 0.732vw 1.464vw;
-            font-size: 1.318vw;
+            font-size: 18px;
             background: linear-gradient(45deg, transparent 5%, $redButton 5%);
             border: 0;
             letter-spacing: 0.220vw;
@@ -172,7 +176,7 @@
 
     .scanner h1 {
         color: transparent;
-        font-size: 1.640vw;
+        font-size: 22.5px;
         position: relative;
         overflow: hidden;
     }
@@ -249,7 +253,7 @@
             height: 5.490vw;
             border: 0.073vw solid #f0f0f0;
             border-radius: 50%;
-            font-size: 0.805vw;
+            font-size: 11px;
             justify-content: center;
             align-items: center;
             transition: all 0.5s;
@@ -265,7 +269,7 @@
         h1 {
             padding: 0.366vw;
             font-weight: 500;
-            font-size: 1.318vw;
+            font-size: 18px;
             margin: 0;
         }
 
@@ -273,7 +277,7 @@
             padding: 0;
             margin: 0;
             color: gray;
-            font-size: 0.952vw;
+            font-size: 13px;
         }
 
         svg {
@@ -298,7 +302,7 @@
     .container {
         // width: 100%;
         // height: 100%;
-        font-size: 1.480vw;
+        font-size: 20.2px;
         margin: 0 3% 0 3%;
 
         .terminal_toolbar {
@@ -353,7 +357,7 @@
         .user {
             color: #d5d0ce;
             margin-left: 0.439vw;
-            font-size: 1.025vw;
+            font-size: 14px;
             line-height: 1.098vw;
         }
 
@@ -436,7 +440,7 @@
     will change the size of the switch.
     See .rocker-small below as example.
     */
-            font-size: 2.343vw;
+            font-size: 32px;
             font-weight: bold;
             text-align: center;
             text-transform: uppercase;
@@ -448,7 +452,7 @@
         }
 
         .rocker-small {
-            font-size: 0.937vw;
+            font-size: 13px;
             /* Sizes the switch */
             // margin: 1em;
         }
@@ -567,28 +571,87 @@
             color: #333;
         }
     }
+}
 
+@media screen and (max-width:1366px) {
+    .aboutMe {
+
+        .name {
+            font-size: 1.830vw;
+        }
+
+        .text {
+            font-size: 1.430vw;
+        }
+
+        .download {
+
+            button,
+            button::after {
+                font-size: 1.318vw;
+            }
+        }
+
+        .scanner h1 {
+            font-size: 1.640vw;
+        }
+
+        .card {
+
+            .img {
+                font-size: 0.805vw;
+            }
+
+            h1 {
+                font-size: 1.318vw;
+            }
+
+            h5 {
+                font-size: 0.952vw;
+            }
+        }
+
+        .container {
+            font-size: 1.480vw;
+
+            .user {
+                font-size: 1.025vw;
+            }
+        }
+
+        .switch {
+            .rocker {
+                font-size: 2.343vw;
+            }
+
+            .rocker-small {
+                font-size: 0.937vw;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:700px) {
     .aboutMe {
-        .cardAndContainer{
+        .cardAndContainer {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10%;
         }
+
         .name {
             font-size: 1.830vh;
             width: 6.149vh;
             height: 6.149vh;
         }
-    
+
         .text {
             font-size: 1.430vh;
         }
-    
+
         .download {
+
             button,
             button::after {
                 margin-bottom: 10%;
@@ -597,7 +660,7 @@
                 letter-spacing: 0.220vh;
                 box-shadow: 0.439vh 0px 0px $blueBackground;
             }
-    
+
             button::after {
                 --slice-0: inset(50% 50% 50% 50%);
                 --slice-1: inset(80% -0.439vh 0 0);
@@ -607,67 +670,67 @@
                 --slice-5: inset(80% -0.439vh 5% 0);
                 text-shadow: -0.220vh -0.220vh 0px $yellow, 0.220vh 0.220vh 0px $blueBackground;
             }
-    
+
             @keyframes glitch {
                 0% {
                     transform: translate(-1.464vh, -0.732vh);
                 }
-    
+
                 10% {
                     transform: translate(0.732vh, 0.732vh);
                 }
-    
+
                 20% {
                     transform: translate(-0.732vh, 0.732vh);
                 }
-    
+
                 30% {
                     transform: translate(0px, 0.366vh);
                 }
-    
+
                 40% {
                     transform: translate(-0.366vh, 0px);
                 }
-    
+
                 50% {
                     transform: translate(0.366vh, 0px);
                 }
-    
+
                 60% {
                     transform: translate(0.366vh, 0.732vh);
                 }
-    
+
                 70% {
                     transform: translate(-0.732vh, 0.732vh);
                 }
-    
+
                 80% {
                     transform: translate(1.464vh, -0.732vh);
                 }
-    
+
                 90% {
                     transform: translate(-0.732vh, 0px);
                 }
-    
+
                 100% {
                     transform: translate(0);
                 }
             }
         }
-    
+
         .scanner h1 {
             font-size: 1.640vh;
         }
-    
+
         .scanner h1::before {
             border-right: 0.293vh solid white;
         }
-    
+
         .card {
             width: 14.641vh;
             height: 17.302vh;
             border-radius: 0.366vh;
-    
+
             .img {
                 margin: 2.196vh auto 0.732vh auto;
                 width: 5.490vh;
@@ -675,43 +738,43 @@
                 border: 0.073vh solid #f0f0f0;
                 font-size: 0.805vh;
             }
-    
+
             h1 {
                 padding: 0.366vh;
                 font-size: 1.318vh;
             }
-    
+
             h5 {
                 font-size: 0.952vh;
             }
-    
+
             svg {
                 padding: 0 0.366vh;
             }
-    
-    
+
+
         }
-    
+
         .card:hover .img {
             border: 0.073vh solid #f0f0f0;
         }
 
-        .containerFather{
+        .containerFather {
             max-width: 95%;
         }
-    
+
         /* From uiverse.io by @mrhyddenn */
         .container {
             margin: 3% 0 3% 0;
             font-size: 1.480vh;
-    
+
             .terminal_toolbar {
                 height: 2.196vh;
                 padding: 0 0.586vh;
                 border-top-left-radius: 0.366vh;
                 border-top-right-radius: 0.366vh;
             }
-    
+
             .btn {
                 margin-right: 0.366vh;
                 height: 0.878vh;
@@ -719,13 +782,13 @@
                 text-shadow: 0px 0.073vh 0px rgba(255, 255, 255, 0.2);
                 box-shadow: 0px 0px 0.073vh 0px #41403A, 0px 0.073vh 0.073vh 0px #474642;
             }
-    
+
             .user {
                 margin-left: 0.439vh;
                 font-size: 1.025vh;
                 line-height: 1.098vh;
             }
-    
+
             .terminal_body {
                 height: calc(100% - 2.196vh);
                 padding-top: 0.146vh;
@@ -733,78 +796,78 @@
                 border-bottom-left-radius: 0.366vh;
                 border-bottom-right-radius: 0.366vh;
             }
-    
+
             .terminal_promt span {
                 margin-left: 0.293vh;
             }
-    
+
             .terminal_cursor {
                 height: 1.430vh;
                 width: 0.732vh;
                 margin-left: 0.732vh;
             }
         }
-    
+
         .switch {
-    
+
             .rocker {
                 font-size: 2.343vh;
                 width: 8.199vh;
                 height: 4.100vh;
                 border-bottom: 0.586vh solid #eee;
             }
-    
+
             .rocker-small {
                 font-size: 0.937vh;
             }
-    
+
             .rocker::before {
                 top: 0.586vh;
                 border: 0.586vh solid #eee;
             }
-    
+
             .switch-left,
             .switch-right {
                 height: 2.928vh;
                 width: 3.514vh;
             }
-    
+
             .switch-left {
                 height: 2.811vh;
                 width: 3.221vh;
                 left: 0.996vh;
                 bottom: 0.469vh;
             }
-    
+
             .switch-right {
                 right: 0.586vh;
             }
-    
+
             .switch-left::before,
             .switch-right::before {
                 width: 0.469vh;
                 height: 2.870vh;
                 bottom: -0.527vh;
             }
-    
+
             .switch-left::before {
                 left: -0.469vh;
             }
-    
+
             .switch-right::before {
                 right: -0.439vh;
             }
-    
+
             input:checked+.switch-left {
                 left: 0.586vh;
                 height: 2.928vh;
                 width: 3.514vh;
             }
-    
+
             input:checked+.switch-left::before {
                 width: 3.611vh;
             }
-    
+
             input:checked+.switch-left+.switch-right {
                 bottom: 0.469vh;
                 right: 0.937vh;
@@ -812,6 +875,6 @@
                 width: 3.221vh;
             }
         }
-    
+
     }
 }
