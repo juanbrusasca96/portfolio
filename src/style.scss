@@ -12,6 +12,10 @@
     background-color: rgb(54, 55, 73);
     .background {
         background: url(/src/images/background1.png) center center/cover no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     font-family: 'Fira Code',

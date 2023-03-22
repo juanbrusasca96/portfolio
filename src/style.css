@@ -10,7 +10,7 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.464vw; }
+      font-size: 20px; }
     .navbarAnimation .navbar .active {
       color: #e55554; }
     .navbarAnimation .navbar .progressMainWrapper {
@@ -24,6 +24,11 @@
     .navbarAnimation .navbar .progressMainStyle {
       height: 0.512vw;
       background-color: #e55554; }
+
+@media screen and (max-width: 1366px) {
+  .navbarAnimation .navbar a,
+  .navbarAnimation .navbar p {
+    font-size: 1.464vw; } }
 
 @media screen and (max-width: 700px) {
   .navbarAnimation .navbar a,
@@ -40,19 +45,21 @@
   .aboutMe p {
     font-family: 'Fira Code', monospace; }
   .aboutMe .name {
-    font-size: 1.830vw;
+    font-size: 25px;
     font-weight: 500;
     margin: 1%;
     margin-top: 3%;
     width: 6.149vw;
     height: 6.149vw; }
   .aboutMe .text {
-    font-size: 1.430vw;
+    font-size: 20px;
     margin: 1% 5% 0 5%;
     text-align: center; }
   .aboutMe .myName {
     color: #e55554;
     font-weight: 800; }
+  .aboutMe .cardAndContainer {
+    width: 100%; }
   .aboutMe .download {
     margin: 1%;
     width: 30%; }
@@ -62,7 +69,7 @@
     .aboutMe .download button,
     .aboutMe .download button::after {
       padding: 0.732vw 1.464vw;
-      font-size: 1.318vw;
+      font-size: 18px;
       background: linear-gradient(45deg, transparent 5%, #e55554 5%);
       border: 0;
       letter-spacing: 0.220vw;
@@ -131,7 +138,7 @@
     transform: translate(0); } }
   .aboutMe .scanner h1 {
     color: transparent;
-    font-size: 1.640vw;
+    font-size: 22.5px;
     position: relative;
     overflow: hidden; }
   .aboutMe .scanner h1::before {
@@ -193,7 +200,7 @@
       height: 5.490vw;
       border: 0.073vw solid #f0f0f0;
       border-radius: 50%;
-      font-size: 0.805vw;
+      font-size: 11px;
       justify-content: center;
       align-items: center;
       transition: all 0.5s;
@@ -205,13 +212,13 @@
     .aboutMe .card h1 {
       padding: 0.366vw;
       font-weight: 500;
-      font-size: 1.318vw;
+      font-size: 18px;
       margin: 0; }
     .aboutMe .card h5 {
       padding: 0;
       margin: 0;
       color: gray;
-      font-size: 0.952vw; }
+      font-size: 13px; }
     .aboutMe .card svg {
       padding: 0 0.366vw;
       cursor: pointer; }
@@ -222,7 +229,7 @@
   .aboutMe .card:hover p {
     opacity: 1; }
   .aboutMe .container {
-    font-size: 1.480vw;
+    font-size: 20.2px;
     margin: 0 3% 0 3%; }
     .aboutMe .container .terminal_toolbar {
       display: flex;
@@ -261,7 +268,7 @@
     .aboutMe .container .user {
       color: #d5d0ce;
       margin-left: 0.439vw;
-      font-size: 1.025vw;
+      font-size: 14px;
       line-height: 1.098vw; }
     .aboutMe .container .terminal_body {
       background: #07182E;
@@ -315,7 +322,7 @@
     will change the size of the switch.
     See .rocker-small below as example.
     */
-      font-size: 2.343vw;
+      font-size: 32px;
       font-weight: bold;
       text-align: center;
       text-transform: uppercase;
@@ -325,7 +332,7 @@
       overflow: hidden;
       border-bottom: 0.586vw solid #eee; }
     .aboutMe .switch .rocker-small {
-      font-size: 0.937vw;
+      font-size: 13px;
       /* Sizes the switch */ }
     .aboutMe .switch .rocker::before {
       content: "";
@@ -408,6 +415,31 @@
       color: #fecb00; }
     .aboutMe .switch input:checked:focus + .switch-left + .switch-right {
       color: #333; }
+
+@media screen and (max-width: 1366px) {
+  .aboutMe .name {
+    font-size: 1.830vw; }
+  .aboutMe .text {
+    font-size: 1.430vw; }
+  .aboutMe .download button,
+  .aboutMe .download button::after {
+    font-size: 1.318vw; }
+  .aboutMe .scanner h1 {
+    font-size: 1.640vw; }
+  .aboutMe .card .img {
+    font-size: 0.805vw; }
+  .aboutMe .card h1 {
+    font-size: 1.318vw; }
+  .aboutMe .card h5 {
+    font-size: 0.952vw; }
+  .aboutMe .container {
+    font-size: 1.480vw; }
+    .aboutMe .container .user {
+      font-size: 1.025vw; }
+  .aboutMe .switch .rocker {
+    font-size: 2.343vw; }
+  .aboutMe .switch .rocker-small {
+    font-size: 0.937vw; } }
 
 @media screen and (max-width: 700px) {
   .aboutMe {
@@ -561,7 +593,7 @@
 .skills {
   background: url(/src/images/backgroundArcade1.png) center/cover no-repeat; }
   .skills h1 {
-    font-size: 1.757vw; }
+    font-size: 24px; }
   .skills .icon {
     color: white;
     padding-top: 60%; }
@@ -571,6 +603,10 @@
     .skills .icon:hover {
       color: #e55554; }
 
+@media screen and (max-width: 1366px) {
+  .skills h1 {
+    font-size: 1.757vw; } }
+
 @media screen and (max-width: 700px) {
   .skills h1 {
     font-size: 1.757vh; }
@@ -579,14 +615,14 @@
     height: 7.321vh; } }
 
 .projects h1 {
-  font-size: 1.757vw; }
+  font-size: 24px; }
 
 .projects a {
   text-decoration: none;
   color: white; }
 
 .projects .cardProject .description {
-  font-size: 1.318vw; }
+  font-size: 18px; }
 
 .projects .cardProject .card {
   width: 12rem;
@@ -604,7 +640,7 @@
   .projects .cardProject .card:hover .content {
     transform: rotateY(0.5turn); }
   .projects .cardProject .card .front svg {
-    font-size: 4.392vw;
+    font-size: 60px;
     transform: translateZ(5rem);
     padding: 4%; }
   .projects .cardProject .card .front,
@@ -618,7 +654,7 @@
     padding: 3%;
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    font-size: 1.830vw; }
+    font-size: 25px; }
   .projects .cardProject .card .title {
     transform: translateZ(5rem); }
   .projects .cardProject .card .subtitle {
@@ -637,14 +673,14 @@
     background-color: #e55554;
     padding: 1%; }
     .projects .cardProject .card .back svg {
-      font-size: 2.196vw;
+      font-size: 30px;
       transform: translateZ(5rem); }
 
 .projects .cardProject button {
   display: flex;
   justify-content: center;
   margin: 1%;
-  font-size: 1.098vw;
+  font-size: 15px;
   font-family: inherit;
   font-weight: 700;
   padding: 0.293vw;
@@ -670,6 +706,21 @@
 
 .projects .cardProject button:hover svg {
   transform: scale(1.2); }
+
+@media screen and (max-width: 1366px) {
+  .projects h1 {
+    font-size: 1.757vw; }
+  .projects .cardProject .description {
+    font-size: 1.318vw; }
+  .projects .cardProject .card .front svg {
+    font-size: 4.392vw; }
+  .projects .cardProject .card .front,
+  .projects .cardProject .card .back {
+    font-size: 1.830vw; }
+  .projects .cardProject .card .back svg {
+    font-size: 2.196vw; }
+  .projects .cardProject button {
+    font-size: 1.098vw; } }
 
 @media screen and (max-width: 700px) {
   .projects .cardProjectContainer {
@@ -731,7 +782,7 @@
   .contact .contactTitle {
     width: 70%; }
     .contact .contactTitle h1 {
-      font-size: 1.757vw; }
+      font-size: 24px; }
   .contact .form form {
     width: 100%;
     display: flex;
@@ -740,12 +791,12 @@
     gap: 1.464vw; }
     .contact .form form .button {
       background-color: #e55554;
-      font-size: 1.098vw; }
+      font-size: 15px; }
   .contact label {
     color: white;
     font-family: 'Fira Code', monospace !important;
     font-weight: bold;
-    font-size: 1.171vw; }
+    font-size: 16px; }
   .contact .input {
     width: 70%;
     border: none; }
@@ -755,6 +806,14 @@
       font-family: 'Fira Code', monospace !important; }
     .contact .input:hover {
       color: white; }
+
+@media screen and (max-width: 1366px) {
+  .contact .contactTitle h1 {
+    font-size: 1.757vw; }
+  .contact .form form .button {
+    font-size: 1.098vw; }
+  .contact label {
+    font-size: 1.171vw; } }
 
 @media screen and (max-width: 700px) {
   .contact {
@@ -776,17 +835,17 @@
   .footer .social {
     gap: 3.660vw; }
     .footer .social svg {
-      font-size: 3.660vw;
+      font-size: 50px;
       transition: all .2s ease-in; }
       .footer .social svg:hover {
         transform: translateY(-0.366vw); }
   .footer .backToTop svg {
-    font-size: 2.562vw; }
+    font-size: 35px; }
   .footer hr {
     width: 70%;
     border: 0.073vw solid #484848; }
   .footer p {
-    font-size: 1.171vw;
+    font-size: 16px;
     color: #616161; }
   .footer .logo {
     width: 4.124vw;
@@ -795,6 +854,14 @@
     justify-content: 'center';
     align-items: 'center';
     margin-left: 2%; }
+
+@media screen and (max-width: 1366px) {
+  .footer .social svg {
+    font-size: 3.660vw; }
+  .footer .backToTop svg {
+    font-size: 2.562vw; }
+  .footer p {
+    font-size: 1.171vw; } }
 
 @media screen and (max-width: 700px) {
   .footer {
@@ -820,7 +887,11 @@
   background-color: #363749;
   font-family: 'Fira Code', monospace; }
   .App .background {
-    background: url(/src/images/background1.png) center center/cover no-repeat; }
+    background: url(/src/images/background1.png) center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 
 html {
   font-family: 'Fira Code', monospace;
