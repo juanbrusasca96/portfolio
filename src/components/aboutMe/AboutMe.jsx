@@ -34,7 +34,7 @@ export default function AboutMe() {
                     <h1 key={index} contentCss={content[index]}>{content[index]}</h1>
                 </div>
             </div>
-            <Grid item container xs={12} mt={`1%`} className='cardAndContainer'>
+            <Grid item container mt={`1%`} className='cardAndContainer'>
                 <Grid item container justifyContent="center" alignItems="center" xs={2}>
                     {/* <Avatar src={avatar} sx={{ width: 64, height: 64 }} className='name' />
                     <Typography className='name'>
