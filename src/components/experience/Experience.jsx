@@ -1,16 +1,15 @@
-import { Grid, SvgIcon, useMediaQuery } from '@mui/material'
+import { Grid, SvgIcon } from '@mui/material'
 import React, { useContext } from 'react'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { LanguageContext } from '../../helpers/LanguageContext'
 
-export default function Projects() {
+export default function Experience() {
     const [spanish] = useContext(LanguageContext)
-    const mobile = useMediaQuery('(max-width: 700px)')
 
     return (
         <Grid container direction="column" className='projects section' xs={12} p={`5%`} id='projects'>
             <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig">
-                <h1>{spanish ? 'Proyectos' : 'Projects'}</h1>
+                <h1>{spanish ? 'Experiencia' : 'Experience'}</h1>
             </AnimationOnScroll>
             <Grid item container xs={12}>
                 {/* <Grid item className='gif' xs={5}>
@@ -29,7 +28,6 @@ export default function Projects() {
                                             <path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H76.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zM176 512c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48z" />
                                         </SvgIcon>
                                         <h3 style={{ fontFamily: "'Cinzel', serif" }} className="title">League of legends store</h3>
-                                        {mobile && <p style={{marginTop: '-10%', color: 'grey'}}>TOUCH ME!</p>}
                                         {/* <iframe src="leagueoflegendsstore.netlify.app/" frameborder="0"></iframe> */}
                                         {/* <p className="subtitle">Hover me :)</p> */}
                                     </div>
@@ -101,7 +99,6 @@ export default function Projects() {
                                             <path d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z" />
                                         </SvgIcon>
                                         <h3 style={{ fontFamily: "'Inter', sans-serif" }} className="title">Social Sound</h3>
-                                        {mobile && <p style={{color: 'grey'}}>TOUCH ME!</p>}
                                         {/* <iframe src="leagueoflegendsstore.netlify.app/" frameborder="0"></iframe> */}
                                         {/* <p className="subtitle">Hover me :)</p> */}
                                     </div>
@@ -132,7 +129,6 @@ export default function Projects() {
                                             <path d="M226.5 92.9c14.3 42.9-.3 86.2-32.6 96.8s-70.1-15.6-84.4-58.5s.3-86.2 32.6-96.8s70.1 15.6 84.4 58.5zM100.4 198.6c18.9 32.4 14.3 70.1-10.2 84.1s-59.7-.9-78.5-33.3S-2.7 179.3 21.8 165.3s59.7 .9 78.5 33.3zM69.2 401.2C121.6 259.9 214.7 224 256 224s134.4 35.9 186.8 177.2c3.6 9.7 5.2 20.1 5.2 30.5v1.6c0 25.8-20.9 46.7-46.7 46.7c-11.5 0-22.9-1.4-34-4.2l-88-22c-15.3-3.8-31.3-3.8-46.6 0l-88 22c-11.1 2.8-22.5 4.2-34 4.2C84.9 480 64 459.1 64 433.3v-1.6c0-10.4 1.6-20.8 5.2-30.5zM421.8 282.7c-24.5-14-29.1-51.7-10.2-84.1s54-47.3 78.5-33.3s29.1 51.7 10.2 84.1s-54 47.3-78.5 33.3zM310.1 189.7c-32.3-10.6-46.9-53.9-32.6-96.8s52.1-69.1 84.4-58.5s46.9 53.9 32.6 96.8s-52.1 69.1-84.4 58.5z" />
                                         </SvgIcon>
                                         <h3 style={{ fontFamily: "'Roboto', sans-serif" }} className="title">PI Dogs</h3>
-                                        {mobile && <p style={{color: 'black'}}>TOUCH ME!</p>}
                                         {/* <iframe src="leagueoflegendsstore.netlify.app/" frameborder="0"></iframe> */}
                                         {/* <p className="subtitle">Hover me :)</p> */}
                                     </div>
@@ -200,7 +196,7 @@ export default function Projects() {
                                     </button>
                                 </Grid>
                             </Grid>
-                            <Grid item className="card" style={{height: mobile && '22.302vh'}}>
+                            <Grid item className="card">
                                 <div className="content">
                                     <div style={{ backgroundColor: "rgb(69, 125, 88)", color: "rgb(246, 246, 234)" }} className="front">
                                         <SvgIcon xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -210,7 +206,6 @@ export default function Projects() {
                                             <path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z" />
                                         </SvgIcon>
                                         <h3 style={{ fontFamily: "'Noto Sans', sans-serif" }} className="title">Investmen Portfolio Calculator</h3>
-                                        {mobile && <p style={{marginTop: '-8%', color: 'black'}}>TOUCH ME!</p>}
                                         {/* <iframe src="leagueoflegendsstore.netlify.app/" frameborder="0"></iframe> */}
                                         {/* <p className="subtitle">Hover me :)</p> */}
                                     </div>

@@ -11,6 +11,7 @@ import Footer from './components/footer/Footer';
 import { LanguageProvider } from './helpers/LanguageContext';
 import { NavbarFixedProvider } from './helpers/NavbarFixedContext';
 import { Grid } from '@mui/material';
+import Experience from './components/experience/Experience';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           </Grid>
           <Skills />
           <Projects />
+          {/* <Experience /> */}
           <Contact />
           <Footer />
         </div>
