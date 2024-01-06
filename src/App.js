@@ -24,7 +24,7 @@ function App() {
           </Grid>
           <Skills />
           <Projects />
-          {/* <Experience /> */}
+          <Experience />
           <Contact />
           <Footer />
         </div>
