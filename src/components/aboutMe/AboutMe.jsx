@@ -103,7 +103,7 @@ export default function AboutMe() {
                 <Grid item container justifyContent="center" alignItems="center" xs={12}>
                     <Grid item container justifyContent="center" alignItems="center" className='download'>
                         <AnimationOnScroll offset={0} delay={800} animateOnce={true} animateIn="animate__fadeInRightBig">
-                            <button> <a href={spanish ? require(`../../files/CVBrusascaJuan(ES).pdf`) : require(`../../files/CVBrusascaJuan(EN).pdf`)} download={spanish ? 'CV - Brusasca Juan (ES)' : 'CV - Brusasca Juan (EN)'}>{spanish ? 'DESCARGAR CV' : 'DOWNLOAD CV'}</a>
+                            <button> <a href={spanish ? require(`../../files/CV-JuanBrusasca.pdf`) : require(`../../files/CVJuanBrusasca.pdf`)} download={spanish ? 'CV - Brusasca Juan (ES)' : 'CV - Brusasca Juan (EN)'}>{spanish ? 'DESCARGAR CV' : 'DOWNLOAD CV'}</a>
                             </button>
                         </AnimationOnScroll>
                     </Grid>
